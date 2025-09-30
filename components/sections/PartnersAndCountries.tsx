@@ -53,11 +53,7 @@ const waveAnimation = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut"
-    }
+    y: 0
   }
 }
 
@@ -155,7 +151,7 @@ const PartnersAndCountries = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
+                    transition={{ delay: i * 0.1, duration: 0.5, ease: "easeOut" }}
                   >
                     {word}
                   </motion.span>
@@ -179,7 +175,7 @@ const PartnersAndCountries = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
+                    transition={{ delay: i * 0.1, duration: 0.5, ease: "easeOut" }}
                   >
                     {word}
                   </motion.span>
