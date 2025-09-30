@@ -39,28 +39,18 @@ const services = [
 
 const waveAnimation = {
   hidden: { opacity: 0, y: 20 },
-  visible: (i: number) => ({
+  visible: {
     opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.1,
-      duration: 0.5,
-      ease: [0.4, 0, 0.2, 1]
-    }
-  })
+    y: 0
+  }
 }
 
 const cardAnimation = {
   hidden: { opacity: 0, x: -50 },
-  visible: (i: number) => ({
+  visible: {
     opacity: 1,
-    x: 0,
-    transition: {
-      delay: i * 0.3,
-      duration: 0.5,
-      ease: [0.4, 0, 0.2, 1]
-    }
-  })
+    x: 0
+  }
 }
 
 const Services = () => {
@@ -85,11 +75,11 @@ const Services = () => {
               {words.map((word, i) => (
                 <motion.span
                   key={i}
-                  custom={i}
                   variants={waveAnimation}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
+                  transition={{ delay: i * 0.1, duration: 0.5, ease: "easeOut" }}
                 >
                   {word}
                 </motion.span>
@@ -106,7 +96,7 @@ const Services = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              custom={index}
+              transition={{ delay: index * 0.3, duration: 0.5, ease: "easeOut" }}
               className="bg-white rounded-lg overflow-hidden shadow-lg group hover:shadow-xl transition-shadow duration-300"
             >
               <div className="relative h-52 sm:h-48 md:h-56 lg:h-64">
