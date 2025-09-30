@@ -51,15 +51,14 @@ const countries: Country[] = [
 
 const waveAnimation = {
   hidden: { opacity: 0, y: 20 },
-  visible: (i: number) => ({
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.1,
       duration: 0.5,
       ease: "easeOut"
     }
-  })
+  }
 }
 
 const InfiniteScroll = ({ items, itemHeight, isPartner = true }: InfiniteScrollProps) => {
@@ -152,11 +151,11 @@ const PartnersAndCountries = () => {
                 {partnerWords.map((word, i) => (
                   <motion.span
                     key={i}
-                    custom={i}
                     variants={waveAnimation}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
                   >
                     {word}
                   </motion.span>
@@ -176,11 +175,11 @@ const PartnersAndCountries = () => {
                 {countryWords.map((word, i) => (
                   <motion.span
                     key={i}
-                    custom={i}
                     variants={waveAnimation}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
                   >
                     {word}
                   </motion.span>
