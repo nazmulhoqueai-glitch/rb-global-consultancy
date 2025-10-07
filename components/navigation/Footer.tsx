@@ -34,16 +34,16 @@ const Footer = () => {
             >
               <div className="flex items-center gap-4 mb-4 sm:mb-6">
                 <Image
-                  src="/logo-white.jpg"
+                  src="/logo.jpg"
                   alt="R&B Global Consultancy"
                   width={150}
-                  height={40}
+                  height={60}
                 />
                 <Image
                   src="/logo-white2.jpeg"
                   alt="R&B Global Consultancy Secondary Logo"
                   width={150}
-                  height={40}
+                  height={60}
                 />
               </div>
               <p className="text-gray-400 text-sm sm:text-base">

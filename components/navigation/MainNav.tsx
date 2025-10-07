@@ -101,6 +101,12 @@ const MainNav = () => {
               Our Team
             </Link>
             <Link 
+              href="/gallery" 
+              className="text-gray-700 hover:text-red-600 transition-all transform hover:scale-110 font-medium text-sm lg:text-base"
+            >
+              Gallery
+            </Link>
+            <Link 
               href="/contact" 
               className="text-gray-700 hover:text-red-600 transition-all transform hover:scale-110 font-medium text-sm lg:text-base"
             >
@@ -194,6 +200,13 @@ const MainNav = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Our Team
+            </Link>
+            <Link 
+              href="/gallery" 
+              className="text-gray-700 hover:text-red-600 transition-all transform hover:scale-105 font-medium py-2 text-base"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Gallery
             </Link>
             <Link 
               href="/contact" 
