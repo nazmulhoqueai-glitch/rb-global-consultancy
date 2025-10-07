@@ -40,7 +40,7 @@ const teamMembers = [
     id: 2,
     name: 'Doulatun Nesa',
     role: 'Director',
-    image: '/images/team/director.png',
+    image: '/images/team/director.jpg',
     bgColor: 'bg-blue-50',
     email: 'director@r&bglobalconsultancy.com',
     phone: '+8801814-195219',
@@ -92,23 +92,23 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: 'MD Abid',
-    role: 'Visa Consultant',
-    image: '/images/team/consultant2.jpg',
-    bgColor: 'bg-purple-50',
-    email: 'abid@r&bglobalconsultancy.com',
+    name: 'Taharatul Sikdar Minar',
+    role: 'Customer Service Officer',
+    image: '/images/team/consultant3.jpg',
+    bgColor: 'bg-red-50',
+    email: 'minar@r&bglobalconsultancy.com',
     phone: '+8801814-195219',
-    bio: 'MD Abid is a dedicated visa consultant with expertise in tourist and business visas. His thorough approach and excellent communication skills make the visa application process smooth and stress-free for clients.',
+    bio: 'Taharatul Sikdar Minar is dedicated to providing exceptional customer service and support to all our clients. With excellent communication skills and a client-first approach, he ensures every inquiry is handled with care and professionalism, making the visa application experience smooth and welcoming.',
     expertise: [
-      'Tourist Visa Services',
-      'Business Visa Applications',
-      'Travel Documentation',
-      'Client Counseling'
+      'Customer Support',
+      'Client Relations',
+      'Query Resolution',
+      'Service Coordination'
     ],
     achievements: [
-      '6+ Years Experience',
-      '1500+ Happy Clients',
-      'Fast-Track Processing Specialist'
+      '5+ Years Experience',
+      'Customer Satisfaction Leader',
+      'Quick Response Specialist'
     ],
     socials: {
       facebook: 'https://facebook.com',
@@ -119,23 +119,77 @@ const teamMembers = [
   },
   {
     id: 5,
-    name: 'MD Sekander Jewel',
-    role: 'Immigration Consultant',
-    image: '/images/team/consultant3.jpg',
-    bgColor: 'bg-red-50',
-    email: 'jewel@r&bglobalconsultancy.com',
+    name: 'Mohammad Ibrahim',
+    role: 'Business Development Officer',
+    image: '/images/team/consultant4.jpg',
+    bgColor: 'bg-orange-50',
+    email: 'ibrahim@r&bglobalconsultancy.com',
     phone: '+8801814-195219',
-    bio: 'MD Sekander Jewel is an experienced immigration consultant specializing in permanent residency and citizenship applications. His comprehensive knowledge of immigration laws helps clients achieve their long-term settlement goals.',
+    bio: 'Mohammad Ibrahim drives business growth and develops strategic partnerships for R&B Global Consultancy. His expertise in identifying new opportunities and building strong relationships with educational institutions and partners worldwide has significantly expanded our service reach and client base.',
     expertise: [
-      'Permanent Residency',
-      'Citizenship Applications',
-      'Family Sponsorship',
-      'Immigration Policy Analysis'
+      'Business Strategy',
+      'Partnership Development',
+      'Market Expansion',
+      'Client Acquisition'
+    ],
+    achievements: [
+      '6+ Years Experience',
+      '50+ Strategic Partnerships',
+      'Business Growth Expert'
+    ],
+    socials: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com'
+    }
+  },
+  {
+    id: 6,
+    name: 'Arshad Khan Wasim',
+    role: 'Regional Sales Director',
+    image: '/images/team/consultant5.jpg',
+    bgColor: 'bg-teal-50',
+    email: 'wasim@r&bglobalconsultancy.com',
+    phone: '+8801814-195219',
+    bio: 'Arshad Khan Wasim leads our regional sales efforts, bringing innovative strategies and a deep understanding of client needs. His leadership in developing and executing sales initiatives has been instrumental in establishing R&B Global Consultancy as a trusted name in immigration services across the region.',
+    expertise: [
+      'Sales Strategy',
+      'Team Leadership',
+      'Market Analysis',
+      'Client Engagement'
     ],
     achievements: [
       '7+ Years Experience',
-      '1000+ PR Applications',
-      'Immigration Law Specialist'
+      'Regional Sales Leader',
+      'Revenue Growth Specialist'
+    ],
+    socials: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com'
+    }
+  },
+  {
+    id: 7,
+    name: 'MD Abid',
+    role: 'Office Executive',
+    image: '/images/team/consultant2.jpg',
+    bgColor: 'bg-purple-50',
+    email: 'abid@r&bglobalconsultancy.com',
+    phone: '+8801814-195219',
+    bio: 'MD Abid manages the day-to-day operations and administrative functions of R&B Global Consultancy. His organizational skills and attention to detail ensure smooth workflow, efficient document processing, and seamless coordination between different departments for optimal client service delivery.',
+    expertise: [
+      'Office Management',
+      'Administrative Operations',
+      'Document Processing',
+      'Team Coordination'
+    ],
+    achievements: [
+      '5+ Years Experience',
+      'Operations Efficiency Expert',
+      'Process Optimization Specialist'
     ],
     socials: {
       facebook: 'https://facebook.com',
@@ -208,7 +262,7 @@ const TeamPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <div className="text-3xl sm:text-4xl font-bold text-red-600 mb-2">45+</div>
+              <div className="text-3xl sm:text-4xl font-bold text-red-600 mb-2">53+</div>
               <div className="text-gray-600 text-sm sm:text-base">Years Combined Experience</div>
             </motion.div>
             <motion.div 

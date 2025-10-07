@@ -11,15 +11,15 @@ const galleryData = [
     id: 1,
     category: 'Awards',
     title: 'Excellence in Visa Services 2024',
-    image: '/images/gallery/achievement1.jpg',
+    image: '/images/gallery/achievement1.png',
     date: 'January 2024',
     description: 'Recognized for outstanding service in visa consultation'
   },
   {
     id: 2,
-    category: 'Certifications',
-    title: 'ISO Certification Achievement',
-    image: '/images/gallery/achievement2.jpg',
+    category: 'Events',
+    title: 'USIM University Event',
+    image: '/images/gallery/achievement2.png',
     date: 'March 2024',
     description: 'Awarded ISO certification for quality management'
   },
@@ -27,31 +27,151 @@ const galleryData = [
     id: 3,
     category: 'Milestones',
     title: '1000+ Successful Visa Applications',
-    image: '/images/gallery/achievement3.jpg',
+    image: '/images/gallery/achievement3.png',
     date: 'June 2024',
     description: 'Celebrating a major milestone in helping clients'
   },
   {
     id: 4,
-    category: 'Awards',
-    title: 'Best Immigration Consultant',
-    image: '/images/gallery/achievement4.jpg',
+    category: 'Events',
+    title: 'University of Sains Islam Malaysia Event',
+    image: '/images/gallery/achievement4.png',
     date: 'August 2024',
     description: 'Honored as the best immigration consultant in the region'
   },
   {
     id: 5,
     category: 'Events',
-    title: 'Annual Client Appreciation Event',
-    image: '/images/gallery/achievement5.jpg',
+    title: 'International Islamic College Event',
+    image: '/images/gallery/achievement5.png',
     date: 'September 2024',
     description: 'Celebrating success with our valued clients'
   },
   {
     id: 6,
-    category: 'Certifications',
-    title: 'Government Accreditation',
-    image: '/images/gallery/achievement6.jpg',
+    category: 'Milestones',
+    title: 'Saudia Visa Complition',
+    image: '/images/gallery/achievement6.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 7,
+    category: 'Milestones',
+    title: 'Malaysian Visit Visa Complition',
+    image: '/images/gallery/achievement7.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 8,
+    category: 'Milestones',
+    title: 'Malaysian Visit Visa Complition',
+    image: '/images/gallery/achievement8.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 9,
+    category: 'Milestones',
+    title: 'Malaysian Visit Visa Complition',
+    image: '/images/gallery/achievement9.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 10,
+    category: 'Milestones',
+    title: 'Saudi Visa Complition',
+    image: '/images/gallery/achievement10.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 11,
+    category: 'Milestones',
+    title: 'Malaysian Student Visa Complition',
+    image: '/images/gallery/achievement11.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 12,
+    category: 'Milestones',
+    title: 'Malaysian Visit Visa Complition',
+    image: '/images/gallery/achievement12.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 13,
+    category: 'Milestones',
+    title: 'Malaysian Visit Visa Complition',
+    image: '/images/gallery/achievement13.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 14,
+    category: 'Milestones',
+    title: 'Malaysian Visit Visa Complition',
+    image: '/images/gallery/achievement14.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 15,
+    category: 'Milestones',
+    title: 'Malaysian Student Visa Complition',
+    image: '/images/gallery/achievement15.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 16,
+    category: 'Milestones',
+    title: 'Romanian Visa Complition',
+    image: '/images/gallery/achievement16.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 17,
+    category: 'Milestones',
+    title: 'Saudi Visa Complition',
+    image: '/images/gallery/achievement17.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 18,
+    category: 'Milestones',
+    title: 'Saudi Visa Complition',
+    image: '/images/gallery/achievement18.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 19,
+    category: 'Milestones',
+    title: 'Saudi Visa Complition',
+    image: '/images/gallery/achievement19.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 20,
+    category: 'Milestones',
+    title: 'Saudi Visa Complition',
+    image: '/images/gallery/achievement20.png',
+    date: 'October 2024',
+    description: 'Official government recognition and accreditation'
+  },
+  {
+    id: 21,
+    category: 'Milestones',
+    title: 'Thailand Visit Visa Complition',
+    image: '/images/gallery/achievement21.png',
     date: 'October 2024',
     description: 'Official government recognition and accreditation'
   }

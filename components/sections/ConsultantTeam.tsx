@@ -23,7 +23,7 @@ const consultants = [
     id: 2,
     name: 'Doulatun Nesa',
     role: 'Director',
-    image: '/images/team/director.png',
+    image: '/images/team/director.jpg',
     bgColor: 'bg-blue-50',
     socials: {
       facebook: 'https://facebook.com',
@@ -47,10 +47,10 @@ const consultants = [
   },
   {
     id: 4,
-    name: 'MD Abid',
-    role: 'Visa Consultant',
-    image: '/images/team/consultant2.jpg',
-    bgColor: 'bg-purple-50',
+    name: 'Taharatul Sikdar Minar',
+    role: 'Customer Service Officer',
+    image: '/images/team/consultant3.jpg',
+    bgColor: 'bg-red-50',
     socials: {
       facebook: 'https://facebook.com',
       twitter: 'https://twitter.com',
@@ -60,10 +60,36 @@ const consultants = [
   },
   {
     id: 5,
-    name: 'MD Sekander Jewel',
-    role: 'Immigration Consultant',
-    image: '/images/team/consultant3.jpg',
+    name: 'Mohammad Ibrahim',
+    role: 'Business Development Officer',
+    image: '/images/team/consultant4.jpg',
     bgColor: 'bg-red-50',
+    socials: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com'
+    }
+  },
+  {
+    id: 6,
+    name: 'Arshad Khan Wasim',
+    role: 'Regional Sales Director',
+    image: '/images/team/consultant5.jpg',
+    bgColor: 'bg-red-50',
+    socials: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com'
+    }
+  },
+  {
+    id: 7,
+    name: 'MD Abid',
+    role: 'Office Executive',
+    image: '/images/team/consultant2.jpg',
+    bgColor: 'bg-purple-50',
     socials: {
       facebook: 'https://facebook.com',
       twitter: 'https://twitter.com',
