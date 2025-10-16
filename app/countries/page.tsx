@@ -6,7 +6,7 @@ import MainNav from '@/components/navigation/MainNav'
 import Footer from '@/components/navigation/Footer'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Globe, Clock, DollarSign, CheckCircle, Search, MapPin, Users, TrendingUp, ArrowRight, X, FileText, GraduationCap, Briefcase, Camera, Home, Phone, Mail } from 'lucide-react'
+import { Globe, Clock, DollarSign, CheckCircle, Search, MapPin, Users, TrendingUp, ArrowRight, X, FileText, GraduationCap, Briefcase, Camera, Home, Phone, Mail, Calendar } from 'lucide-react'
 
 const countries = [
   {
@@ -297,6 +297,144 @@ const countryDetails = {
       ],
       averageSalary: 'AUD $50,000 - $80,000 per year'
     }
+  },
+  2: { // Denmark
+    overview: {
+      capital: 'Copenhagen',
+      population: '5.8 million',
+      currency: 'Danish Krone (DKK)',
+      language: 'Danish, English',
+      timeZone: 'UTC+1 (CET)',
+      climate: 'Temperate oceanic',
+      majorCities: ['Copenhagen', 'Aarhus', 'Odense', 'Aalborg', 'Esbjerg'],
+      whyChoose: [
+        'High-quality education system',
+        'No tuition fees for EU students',
+        'Strong economy and job market',
+        'Excellent work-life balance',
+        'Safe and peaceful country',
+        'English-taught programs available'
+      ]
+    },
+    studentVisa: {
+      types: ['Student Visa (Residence Permit)', 'Family Reunification Visa', 'Work Permit'],
+      requirements: [
+        'Valid passport',
+        'Admission letter from Danish university',
+        'Proof of financial means',
+        'Health insurance',
+        'Accommodation proof',
+        'IELTS/TOEFL (for non-UK degree holders)',
+        'Academic documents',
+        'CV and Statement of Purpose'
+      ],
+      processingTime: '2-3 months',
+      fees: '2200 DKK (Immigration) + 1700 DKK (Embassy) + 1680 BDT (VFS)',
+      workRights: '20 hours per week during study, full-time during holidays'
+    },
+    documents: {
+      admission: [
+        'Passport (updated)',
+        'Old Passport (if any)',
+        'Academic Documents: Transcript/Certificate',
+        'Personal Statement (SOP)',
+        'Recommendation Letter (LOR)',
+        'CV (formal)',
+        'Extra-Curricular Activities Documents (if any)',
+        'Travel History (Seal Page with Departure and Arrival Date)',
+        'Passport Size Photo (4 copies)',
+        'IELTS Certificate (if required)'
+      ],
+      visa: [
+        'Valid passport with sufficient validity',
+        'Admission letter from Danish university',
+        'Proof of financial means (if applicable)',
+        'Health insurance documentation',
+        'Accommodation proof in Denmark',
+        'Academic transcripts and certificates',
+        'Statement of Purpose (SOP)',
+        'Recommendation letters',
+        'CV/Resume',
+        'Passport-sized photographs',
+        'Travel history documentation',
+        'Bank statements (for family applicants)',
+        'Marriage certificate (if spouse applying)',
+        'Birth certificates (if children applying)',
+        'Medical examination results',
+        'Police clearance certificate'
+      ],
+      forms: [
+        'Residence permit application form',
+        'Financial guarantee form',
+        'Health insurance declaration',
+        'Accommodation confirmation form',
+        'Family information form (if applicable)'
+      ]
+    },
+    universities: {
+      topUniversities: [
+        'University of Copenhagen',
+        'Technical University of Denmark',
+        'Aarhus University',
+        'University of Southern Denmark',
+        'Aalborg University',
+        'Roskilde University',
+        'IT University of Copenhagen',
+        'Copenhagen Business School',
+        'Royal Danish Academy',
+        'Danish University of Pharmaceutical Science'
+      ],
+      popularCourses: [
+        'Business Administration',
+        'Engineering & Technology',
+        'Computer Science',
+        'Medicine & Health Sciences',
+        'Design & Architecture',
+        'Environmental Sciences',
+        'Social Sciences',
+        'Arts & Humanities'
+      ]
+    },
+    costs: {
+      tuition: {
+        undergraduate: 'Free for EU students, 6,000-16,000 EUR/year for non-EU',
+        postgraduate: 'Free for EU students, 8,000-18,000 EUR/year for non-EU',
+        phd: 'Free for EU students, 6,000-15,000 EUR/year for non-EU'
+      },
+      living: {
+        accommodation: '3,000-6,000 DKK per month',
+        food: '2,000-3,000 DKK per month',
+        transport: '500-800 DKK per month',
+        utilities: '800-1,200 DKK per month',
+        total: '6,300-11,000 DKK per month'
+      }
+    },
+    workOpportunities: {
+      duringStudy: '20 hours per week during study',
+      afterGraduation: '6-month job search visa, then work permit',
+      popularJobs: [
+        'Software Developer',
+        'Business Analyst',
+        'Engineer',
+        'Designer',
+        'Researcher',
+        'Consultant'
+      ],
+      averageSalary: '25,000-45,000 DKK per month'
+    },
+    ielts: {
+      bachelor: '6.0 (No band less than 5.5)',
+      master: '6.5 (No band less than 6.0)',
+      note: 'IELTS required only for non-UK degree holders'
+    },
+    intakes: ['February', 'September'],
+    specialNotes: [
+      'No bank statement required for single applicants',
+      'Study gap acceptable',
+      'No hidden charges',
+      'Family applicants need 13 Lakh BDT bank statement for 2 months',
+      'Processing time: 2-3 months minimum'
+    ]
   }
 }
 
@@ -768,6 +906,50 @@ const CountriesPage = () => {
                         </div>
                       </div>
 
+                      {/* IELTS Requirements (Denmark specific) */}
+                      {details.ielts && (
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <FileText className="w-6 h-6 mr-2 text-red-600" />
+                            IELTS Requirements
+                          </h3>
+                          <div className="bg-yellow-50 rounded-lg p-4 mb-4">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              <div className="text-center">
+                                <GraduationCap className="w-8 h-8 text-yellow-600 mx-auto mb-2" />
+                                <div className="text-sm text-gray-600">Bachelor's Degree</div>
+                                <div className="font-bold text-yellow-600">{details.ielts.bachelor}</div>
+                              </div>
+                              <div className="text-center">
+                                <GraduationCap className="w-8 h-8 text-yellow-600 mx-auto mb-2" />
+                                <div className="text-sm text-gray-600">Master's Degree</div>
+                                <div className="font-bold text-yellow-600">{details.ielts.master}</div>
+                              </div>
+                            </div>
+                            <div className="mt-3 text-center">
+                              <p className="text-sm text-gray-700 font-semibold">{details.ielts.note}</p>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Intakes (Denmark specific) */}
+                      {details.intakes && (
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <Calendar className="w-6 h-6 mr-2 text-red-600" />
+                            Intake Periods
+                          </h3>
+                          <div className="flex flex-wrap gap-3">
+                            {details.intakes.map((intake, index) => (
+                              <span key={index} className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-semibold">
+                                {intake}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
                       {/* Universities & Courses */}
                       <div>
                         <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
@@ -880,6 +1062,26 @@ const CountriesPage = () => {
                         </div>
                       </div>
 
+                      {/* Special Notes (Denmark specific) */}
+                      {details.specialNotes && (
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <CheckCircle className="w-6 h-6 mr-2 text-red-600" />
+                            Important Notes
+                          </h3>
+                          <div className="bg-green-50 rounded-lg p-4">
+                            <ul className="space-y-2">
+                              {details.specialNotes.map((note, index) => (
+                                <li key={index} className="flex items-start space-x-2">
+                                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                                  <span className="text-gray-700">{note}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      )}
+
                       {/* CTA Section */}
                       <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-lg p-6 text-white text-center">
                         <h3 className="text-2xl font-bold mb-4">Ready to Apply for {country.name}?</h3>
@@ -888,7 +1090,7 @@ const CountriesPage = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                           <a
-                            href="https://wa.me/0182999222?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20studying%20in%20Australia."
+                            href={`https://wa.me/0182999222?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20studying%20in%20${country.name}.`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block bg-white text-red-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold"
