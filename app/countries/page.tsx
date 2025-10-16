@@ -1056,7 +1056,7 @@ const CountriesPage = () => {
                       </div>
 
                       {/* IELTS Requirements (Denmark specific) */}
-                      {details.ielts && (
+                      {'ielts' in details && details.ielts && (
                         <div>
                           <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                             <FileText className="w-6 h-6 mr-2 text-red-600" />
@@ -1083,7 +1083,7 @@ const CountriesPage = () => {
                       )}
 
                       {/* Intakes (Denmark specific) */}
-                      {details.intakes && (
+                      {'intakes' in details && details.intakes && (
                         <div>
                           <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                             <Calendar className="w-6 h-6 mr-2 text-red-600" />
@@ -1212,7 +1212,7 @@ const CountriesPage = () => {
                       </div>
 
                       {/* MOI Option (Canada specific) */}
-                      {details.moi && (
+                      {'moi' in details && details.moi && (
                         <div>
                           <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                             <FileText className="w-6 h-6 mr-2 text-red-600" />
@@ -1234,7 +1234,7 @@ const CountriesPage = () => {
                       )}
 
                       {/* Payment Details (Canada specific) */}
-                      {details.payment && (
+                      {'payment' in details && details.payment && (
                         <div>
                           <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                             <DollarSign className="w-6 h-6 mr-2 text-red-600" />
@@ -1272,7 +1272,7 @@ const CountriesPage = () => {
                       )}
 
                       {/* Special Notes */}
-                      {details.specialNotes && (
+                      {'specialNotes' in details && details.specialNotes && (
                         <div>
                           <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                             <CheckCircle className="w-6 h-6 mr-2 text-red-600" />
