@@ -161,6 +161,21 @@ const countries = [
   },
   {
     id: 11,
+    name: 'China',
+    flag: '/images/countries/china.png',
+    image: '/images/countries/china.png',
+    continent: 'Asia',
+    visaTypes: ['Student Visa (X1)', 'Student Visa (X2)', 'Work Visa', 'Business Visa'],
+    processingTime: '7-15 working days',
+    universities: 200,
+    successRate: 92,
+    popularCities: ['Beijing', 'Shanghai', 'Guangzhou', 'Shenzhen'],
+    description: 'Rapidly growing economy, world-class universities, and rich cultural heritage.',
+    requirements: ['Valid Passport', 'Admission Notice', 'JW201/JW202 Form', 'Financial Proof'],
+    bgGradient: 'from-red-600 via-yellow-400 to-red-600'
+  },
+  {
+    id: 12,
     name: 'Thailand',
     flag: '/images/countries/thailand.png',
     image: '/images/countries/thailand.png',
@@ -598,6 +613,170 @@ const countryDetails = {
       'Police Clearance Certificate (Home & Abroad) need to submit during visa application',
       'MOI option available if English test scores not available',
       'Post-graduation work permit available for 1-3 years'
+    ]
+  },
+  11: { // China
+    overview: {
+      capital: 'Beijing',
+      population: '1.4 billion',
+      currency: 'Chinese Yuan (CNY)',
+      language: 'Mandarin Chinese',
+      timeZone: 'UTC+8',
+      climate: 'Continental, subtropical',
+      majorCities: ['Beijing', 'Shanghai', 'Guangzhou', 'Shenzhen', 'Chengdu'],
+      whyChoose: [
+        'Rapidly growing economy',
+        'World-class universities',
+        'Rich cultural heritage',
+        'Affordable cost of living',
+        'Strong job market',
+        'Modern infrastructure'
+      ]
+    },
+    studentVisa: {
+      types: ['Student Visa (X1)', 'Student Visa (X2)', 'Work Visa', 'Business Visa'],
+      requirements: [
+        'Valid passport (minimum 6 months validity)',
+        'Admission Notice from Chinese university',
+        'JW201/JW202 Form (original)',
+        'Financial proof (bank statement, sponsor affidavit)',
+        'Academic certificates and transcripts',
+        'Police clearance certificate',
+        'CV/Statement of Purpose',
+        'Passport-sized photos'
+      ],
+      processingTime: '7-15 working days',
+      fees: 'Varies by visa type and country',
+      workRights: 'Limited work rights during study, full-time after graduation'
+    },
+    documents: {
+      admission: [
+        'Valid Passport (minimum 6 months validity, blank visa pages)',
+        'Passport-sized photos (recent)',
+        'Visa application form (completed online)',
+        'Original Admission Notice',
+        'JW201/JW202 Form (original)',
+        'Academic certificates and transcripts (translated & notarized)',
+        'Financial proof (bank statement, sponsor affidavit, scholarship letter)',
+        'Police clearance certificate (if requested)',
+        'CV / Statement of Purpose',
+        'Birth / Marriage certificates (if applicable)'
+      ],
+      visa: [
+        'Valid passport with minimum 6 months validity',
+        'Original Admission Notice from Chinese university',
+        'JW201/JW202 Form (JW201 = government scholarship, JW202 = self-funded)',
+        'Academic certificates and transcripts (translated & notarized)',
+        'Financial proof (bank statement, sponsor affidavit)',
+        'Police clearance certificate',
+        'CV/Statement of Purpose',
+        'Passport-sized photographs',
+        'Visa application form (completed online)',
+        'Health examination results (for X1 visa)',
+        'Birth/Marriage certificates (if applicable)',
+        'Scholarship letter (if applicable)',
+        'Sponsor affidavit',
+        'Bank statements',
+        'Travel history documentation'
+      ],
+      forms: [
+        'Visa application form (completed online)',
+        'JW201/JW202 Form',
+        'Financial guarantee form',
+        'Health examination form (for X1 visa)',
+        'Residence permit application (for X1 visa)'
+      ]
+    },
+    universities: {
+      topUniversities: [
+        'Tsinghua University',
+        'Peking University',
+        'Fudan University',
+        'Shanghai Jiao Tong University',
+        'Zhejiang University',
+        'University of Science and Technology of China',
+        'Nanjing University',
+        'Sun Yat-sen University',
+        'Harbin Institute of Technology',
+        'Xi\'an Jiaotong University'
+      ],
+      popularCourses: [
+        'Engineering & Technology',
+        'Business Administration',
+        'Computer Science',
+        'Medicine',
+        'Chinese Language',
+        'International Relations',
+        'Economics',
+        'Arts & Design'
+      ]
+    },
+    costs: {
+      tuition: {
+        undergraduate: '15,000-35,000 CNY per year',
+        postgraduate: '20,000-40,000 CNY per year',
+        phd: '25,000-45,000 CNY per year'
+      },
+      living: {
+        accommodation: '2,000-5,000 CNY per month',
+        food: '1,500-3,000 CNY per month',
+        transport: '300-800 CNY per month',
+        utilities: '200-500 CNY per month',
+        total: '4,000-9,300 CNY per month'
+      }
+    },
+    workOpportunities: {
+      duringStudy: 'Limited work rights during study',
+      afterGraduation: 'Work visa available after graduation',
+      popularJobs: [
+        'Software Developer',
+        'Business Analyst',
+        'Engineer',
+        'Teacher',
+        'Translator',
+        'Marketing Specialist'
+      ],
+      averageSalary: '8,000-20,000 CNY per month'
+    },
+    visaTypes: {
+      x1: {
+        description: 'Long-term student visa (more than 180 days)',
+        validity: '30 days on arrival, then convert to Residence Permit',
+        requirements: 'Must apply for Residence Permit within 30 days of arrival',
+        healthCheck: 'Required - Foreigner Physical Examination Record'
+      },
+      x2: {
+        description: 'Short-term student visa (up to 180 days)',
+        validity: 'Up to 180 days',
+        requirements: 'No residence permit required',
+        healthCheck: 'Not required'
+      }
+    },
+    process: {
+      steps: [
+        'Apply to a Chinese University & Receive Admission',
+        'Fill in the Visa Application Form Online & Book Appointment',
+        'Submit at Visa Application Centre / Chinese Embassy',
+        'Wait for Processing & Collect Visa',
+        'Arrival in China & Registration',
+        'Health Check (for X1 Visa Holders)'
+      ],
+      details: [
+        'University issues Admission Notice and JW201/JW202 Form',
+        'Complete online form and book appointment at CVASC',
+        'Submit documents and provide biometrics',
+        'Processing takes 7-15 working days',
+        'Register with university and report to PSB within 30 days',
+        'X1 holders must undergo medical check at designated hospital'
+      ]
+    },
+    specialNotes: [
+      'Without JW201/JW202 & Admission Notice, you cannot apply for student visa',
+      'Documents may need English or Chinese translation & notarization',
+      'X1 Visa holders must apply for Residence Permit within 30 days of arrival',
+      'Always confirm requirements with university and Chinese Embassy',
+      'Rules may change - check with official sources',
+      'Health check required for X1 visa holders at designated hospital'
     ]
   }
 }
@@ -1282,6 +1461,83 @@ const CountriesPage = () => {
                                 </div>
                               </div>
                             </div>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Visa Types (China specific) */}
+                      {'visaTypes' in details && details.visaTypes && (
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <FileText className="w-6 h-6 mr-2 text-red-600" />
+                            Student Visa Types
+                          </h3>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="bg-red-50 rounded-lg p-4">
+                              <h4 className="text-lg font-semibold text-red-800 mb-3">X1 Visa (Long-term)</h4>
+                              <div className="space-y-2 text-sm">
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Description:</span>
+                                  <span className="font-semibold">{details.visaTypes.x1.description}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Validity:</span>
+                                  <span className="font-semibold">{details.visaTypes.x1.validity}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Health Check:</span>
+                                  <span className="font-semibold">{details.visaTypes.x1.healthCheck}</span>
+                                </div>
+                                <div className="text-gray-700 mt-2">
+                                  <p className="font-semibold">Requirements:</p>
+                                  <p>{details.visaTypes.x1.requirements}</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="bg-blue-50 rounded-lg p-4">
+                              <h4 className="text-lg font-semibold text-blue-800 mb-3">X2 Visa (Short-term)</h4>
+                              <div className="space-y-2 text-sm">
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Description:</span>
+                                  <span className="font-semibold">{details.visaTypes.x2.description}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Validity:</span>
+                                  <span className="font-semibold">{details.visaTypes.x2.validity}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Health Check:</span>
+                                  <span className="font-semibold">{details.visaTypes.x2.healthCheck}</span>
+                                </div>
+                                <div className="text-gray-700 mt-2">
+                                  <p className="font-semibold">Requirements:</p>
+                                  <p>{details.visaTypes.x2.requirements}</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Application Process (China specific) */}
+                      {'process' in details && details.process && (
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <CheckCircle className="w-6 h-6 mr-2 text-red-600" />
+                            Application Process
+                          </h3>
+                          <div className="space-y-4">
+                            {details.process.steps.map((step, index) => (
+                              <div key={index} className="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg">
+                                <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                                  {index + 1}
+                                </div>
+                                <div className="flex-1">
+                                  <h4 className="font-semibold text-gray-800 mb-2">{step}</h4>
+                                  <p className="text-gray-600 text-sm">{details.process.details[index]}</p>
+                                </div>
+                              </div>
+                            ))}
                           </div>
                         </div>
                       )}
