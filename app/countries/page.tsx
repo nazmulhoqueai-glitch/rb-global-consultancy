@@ -1279,14 +1279,13 @@ const CountriesPage = () => {
                       <div className="absolute inset-0 bg-black/20"></div>
                       <div className="relative z-10 text-center">
                         <div className="w-20 h-20 mx-auto mb-4 relative rounded-full overflow-hidden border-4 border-white shadow-xl">
-                          <Image
+                          <img
                             src={country.flag}
                             alt={country.name}
-                            fill
-                            className="object-cover"
+                            className="w-full h-full object-cover"
                             onError={(e) => {
                               console.error('Image failed to load:', country.flag);
-                              e.currentTarget.style.display = 'none';
+                              e.currentTarget.src = '/images/countries/australia.png'; // Fallback
                             }}
                           />
                         </div>
@@ -1438,15 +1437,13 @@ const CountriesPage = () => {
                       
                       <div className="flex items-center space-x-4">
                         <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                          <Image
+                          <img
                             src={country.flag}
                             alt={country.name}
-                            width={64}
-                            height={64}
-                            className="object-cover"
+                            className="w-full h-full object-cover"
                             onError={(e) => {
                               console.error('Modal image failed to load:', country.flag);
-                              e.currentTarget.style.display = 'none';
+                              e.currentTarget.src = '/images/countries/australia.png'; // Fallback
                             }}
                           />
                         </div>
