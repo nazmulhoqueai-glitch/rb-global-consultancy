@@ -176,6 +176,21 @@ const countries = [
   },
   {
     id: 12,
+    name: 'Malta',
+    flag: '/images/countries/malta.png',
+    image: '/images/countries/malta.png',
+    continent: 'Europe',
+    visaTypes: ['Student Visa', 'Work Visa', 'Business Visa', 'Tourist Visa'],
+    processingTime: '20 days',
+    universities: 8,
+    successRate: 88,
+    popularCities: ['Valletta', 'Sliema', 'St. Julian\'s', 'Mdina'],
+    description: 'EU member state, English-speaking country, and gateway to Europe.',
+    requirements: ['Valid Passport', 'MOI Certificate', 'Financial Proof', 'Health Insurance'],
+    bgGradient: 'from-red-600 via-white to-red-600'
+  },
+  {
+    id: 13,
     name: 'Thailand',
     flag: '/images/countries/thailand.png',
     image: '/images/countries/thailand.png',
@@ -777,6 +792,172 @@ const countryDetails = {
       'Always confirm requirements with university and Chinese Embassy',
       'Rules may change - check with official sources',
       'Health check required for X1 visa holders at designated hospital'
+    ]
+  },
+  12: { // Malta
+    overview: {
+      capital: 'Valletta',
+      population: '520,000',
+      currency: 'Euro (EUR)',
+      language: 'Maltese, English',
+      timeZone: 'UTC+1 (CET)',
+      climate: 'Mediterranean',
+      majorCities: ['Valletta', 'Sliema', 'St. Julian\'s', 'Mdina', 'Rabat'],
+      whyChoose: [
+        'EU member state',
+        'English-speaking country',
+        'Gateway to Europe',
+        'Affordable education',
+        'Safe and peaceful',
+        'Rich cultural heritage'
+      ]
+    },
+    studentVisa: {
+      types: ['Student Visa', 'Work Visa', 'Business Visa', 'Tourist Visa'],
+      requirements: [
+        'Valid passport',
+        'MOI Certificate',
+        'Financial proof',
+        'Health insurance',
+        'Accommodation confirmation',
+        'Academic documents',
+        'CV and Statement of Purpose',
+        'Job experience letter'
+      ],
+      processingTime: '20 days',
+      fees: 'CVU Fee: 21,000 BDT + Application: 19,000 BDT + VFS: 16,900 BDT',
+      workRights: 'Limited work rights during study'
+    },
+    documents: {
+      admission: [
+        'NID (National ID)',
+        'Passport',
+        'MOI Certificate',
+        'All certificates and transcripts',
+        '3 Letters of Recommendation (LOR)',
+        'CV',
+        'Statement of Purpose (SOP)',
+        'Job experience letter',
+        'Financial affidavit',
+        'Asset valuation',
+        'Insurance documentation',
+        'Profile ready and attestation',
+        'TIN certificate',
+        'Trade license',
+        'Asset proof (house rent)',
+        'Sponsor NID and photo'
+      ],
+      visa: [
+        'Valid passport',
+        'MOI Certificate',
+        'All academic certificates and transcripts',
+        '3 Letters of Recommendation',
+        'CV and Statement of Purpose',
+        'Job experience letter',
+        'Financial affidavit with asset valuation',
+        'Health insurance (10,000 BDT)',
+        'Profile ready and attestation',
+        'TIN certificate',
+        'Trade license',
+        'Asset proof (house rent)',
+        'Sponsor NID and photo',
+        'Accommodation confirmation',
+        'Bank support documentation'
+      ],
+      forms: [
+        'Student visa application form',
+        'Financial affidavit',
+        'Asset valuation form',
+        'Insurance application',
+        'Profile attestation form'
+      ]
+    },
+    universities: {
+      topUniversities: [
+        'University of Malta',
+        'Malta College of Arts, Science and Technology',
+        'American University of Malta',
+        'St. Martin\'s Institute of Higher Education',
+        'Malta International Training Centre',
+        'European Institute of Education',
+        'Malta Business School',
+        'Institute of Tourism Studies'
+      ],
+      popularCourses: [
+        'Business Administration',
+        'Tourism & Hospitality',
+        'Information Technology',
+        'Maritime Studies',
+        'Languages',
+        'Arts & Humanities',
+        'Health Sciences',
+        'Engineering'
+      ]
+    },
+    costs: {
+      tuition: {
+        undergraduate: '6,500 EUR per year',
+        postgraduate: '7,000-10,000 EUR per year',
+        phd: '8,000-12,000 EUR per year'
+      },
+      living: {
+        accommodation: '400-800 EUR per month',
+        food: '300-500 EUR per month',
+        transport: '50-100 EUR per month',
+        utilities: '100-200 EUR per month',
+        total: '850-1,600 EUR per month'
+      }
+    },
+    workOpportunities: {
+      duringStudy: 'Limited work rights during study',
+      afterGraduation: 'Work visa available after graduation',
+      popularJobs: [
+        'Tourism & Hospitality',
+        'IT Professional',
+        'Business Analyst',
+        'Maritime Officer',
+        'Language Teacher',
+        'Healthcare Professional'
+      ],
+      averageSalary: '1,200-2,500 EUR per month'
+    },
+    fees: {
+      initial: {
+        application: '19,000 BDT',
+        vfs: '16,900 BDT',
+        healthInsurance: '10,000 BDT',
+        documentation: '5,000 BDT',
+        accommodation: '1,100 EUR',
+        tuition: '6,500 EUR',
+        bankSupport: '60,000 BDT'
+      },
+      cvu: '21,000 BDT (Central Visa Unit Fee)',
+      note: 'Plane fare and accommodation booking are excluded'
+    },
+    process: {
+      steps: [
+        'Collection of Documents',
+        'Issue Offer + CVU Fee Payment',
+        'VFS Appointment Document Preparation',
+        'Interview Day',
+        'Passport Delivery (20 days)'
+      ],
+      details: [
+        'Collect docs (NID, Passport, MOI, certificates, 3 LOR, CV, SOP, job exp. letter) with application fees of 19,000 BDT',
+        'Issue offer + CVU fee 21,000 BDT payment',
+        'Prepare financial affidavit, insurance, profile attestation, TIN, trade license, asset proof, sponsor documents',
+        'Attend interview at embassy/consulate',
+        'Passport will be delivered within 20 days'
+      ]
+    },
+    specialNotes: [
+      'CVU (Central Visa Unit) Fee: 21,000 BDT must be paid',
+      'Initial payment includes application, VFS, health insurance, and documentation fees',
+      'Accommodation confirmation required (1,100 EUR)',
+      'Bank support of 60,000 BDT required',
+      'Processing time: 20 days for passport delivery',
+      'EU member state - access to European job market',
+      'English-speaking country - no language barrier'
     ]
   }
 }
@@ -1460,6 +1641,60 @@ const CountriesPage = () => {
                                   <p>{details.payment.university}</p>
                                 </div>
                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Fees Breakdown (Malta specific) */}
+                      {'fees' in details && details.fees && (
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <DollarSign className="w-6 h-6 mr-2 text-red-600" />
+                            Fees Breakdown
+                          </h3>
+                          <div className="bg-red-50 rounded-lg p-4 mb-4">
+                            <h4 className="text-lg font-semibold text-red-800 mb-3">Initial Payment</h4>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              <div className="space-y-2">
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Application Fee:</span>
+                                  <span className="font-semibold">{details.fees.initial.application}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">VFS Fee:</span>
+                                  <span className="font-semibold">{details.fees.initial.vfs}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Health Insurance:</span>
+                                  <span className="font-semibold">{details.fees.initial.healthInsurance}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Documentation:</span>
+                                  <span className="font-semibold">{details.fees.initial.documentation}</span>
+                                </div>
+                              </div>
+                              <div className="space-y-2">
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Accommodation:</span>
+                                  <span className="font-semibold">{details.fees.initial.accommodation}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Tuition Fee:</span>
+                                  <span className="font-semibold">{details.fees.initial.tuition}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Bank Support:</span>
+                                  <span className="font-semibold">{details.fees.initial.bankSupport}</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="mt-4 p-3 bg-white rounded border-l-4 border-red-600">
+                              <div className="flex justify-between items-center">
+                                <span className="font-semibold text-red-800">CVU Fee:</span>
+                                <span className="font-bold text-red-600">{details.fees.cvu}</span>
+                              </div>
+                              <p className="text-sm text-gray-600 mt-1">{details.fees.note}</p>
                             </div>
                           </div>
                         </div>
