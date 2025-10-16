@@ -17,17 +17,17 @@ const teamMembers = [
     bgColor: 'bg-yellow-50',
     email: 'rafi@r&bglobalconsultancy.com',
     phone: '+880182999222',
-    bio: 'With over 12 years of experience in immigration consulting, Abdul Momen Rafi founded R&B Global Consultancy to help individuals achieve their dreams of studying, working, and living abroad. His expertise and dedication have helped thousands of clients successfully navigate complex immigration processes.',
+    bio: 'My name is Abdul Momen Rafi, and I am the founder of R&B Global Consultancy and Rafi Air International. I completed my higher studies in Malaysia, where I also gained valuable professional experience working for Citi Bank Malaysia as a Customer Service Executive for around four years. Living and working abroad taught me how important the right guidance is for students who dream of studying overseas. Since 2014, I have been actively involved in the student visa and global education consultancy sector. Over the past decade, I have had the privilege of guiding more than 5,000 students toward successful admissions and visas to top universities in Malaysia, the UK, Canada, China, Russia, and various European countries. Through R&B Global Consultancy, my mission is to make international education easier, safer, and more accessible for Bangladeshi students. I believe that every student deserves a chance to build a global career, and proper guidance can make that dream come true. "My goal is not just to send students abroad — but to help them build a successful future."',
     expertise: [
-      'Immigration Law & Policy',
-      'Business Visa Strategy',
-      'Corporate Immigration Solutions',
-      'International Education Consulting'
+      'Student Visa Consulting',
+      'International Education Guidance',
+      'Banking & Financial Services',
+      'University Admissions Strategy'
     ],
     achievements: [
       '10+ Years Experience',
-      '5000+ Successful Cases',
-      '98% Success Rate'
+      '5000+ Students Guided',
+      'Multiple Country Expertise'
     ],
     socials: {
       facebook: 'https://www.facebook.com/momen.rafi.3',
@@ -173,7 +173,7 @@ const teamMembers = [
   },
   {
     id: 7,
-    name: 'MD Abid',
+    name: 'Abdun Nur Tusher Abid',
     role: 'Office Executive',
     image: '/images/team/consultant2.jpg',
     bgColor: 'bg-purple-50',
@@ -187,7 +187,7 @@ const teamMembers = [
       'Team Coordination'
     ],
     achievements: [
-      '5+ Years Experience',
+      '4+ Years Experience',
       'Operations Efficiency Expert',
       'Process Optimization Specialist'
     ],
