@@ -41,6 +41,21 @@ const countries = [
   },
   {
     id: 3,
+    name: 'Denmark',
+    flag: '/images/countries/denmark.png',
+    image: '/images/countries/denmark.png',
+    continent: 'Europe',
+    visaTypes: ['Student Visa', 'Work Visa', 'Family Reunification Visa'],
+    processingTime: '2-3 months',
+    universities: 20,
+    successRate: 89,
+    popularCities: ['Copenhagen', 'Aarhus', 'Odense', 'Aalborg'],
+    description: 'High-quality education system, no tuition fees for EU students, and excellent work-life balance.',
+    requirements: ['Valid Passport', 'Admission Letter', 'Financial Proof', 'Health Insurance'],
+    bgGradient: 'from-red-600 via-white to-red-600'
+  },
+  {
+    id: 4,
     name: 'United Kingdom',
     flag: '/images/countries/uk.png',
     image: '/images/countries/uk.png',
@@ -55,7 +70,7 @@ const countries = [
     bgGradient: 'from-blue-600 via-white to-red-600'
   },
   {
-    id: 4,
+    id: 5,
     name: 'United States',
     flag: '/images/countries/usa.png',
     image: '/images/countries/usa.png',
@@ -70,7 +85,7 @@ const countries = [
     bgGradient: 'from-blue-700 via-white to-red-600'
   },
   {
-    id: 5,
+    id: 6,
     name: 'Germany',
     flag: '/images/countries/mal.png',
     image: '/images/countries/mal.png',
@@ -85,7 +100,7 @@ const countries = [
     bgGradient: 'from-black via-red-600 to-yellow-400'
   },
   {
-    id: 6,
+    id: 7,
     name: 'France',
     flag: '/images/countries/france.png',
     image: '/images/countries/france.png',
@@ -100,7 +115,7 @@ const countries = [
     bgGradient: 'from-blue-600 via-white to-red-600'
   },
   {
-    id: 7,
+    id: 8,
     name: 'Dubai (UAE)',
     flag: '/images/countries/dubai.png',
     image: '/images/countries/dubai.png',
@@ -115,7 +130,7 @@ const countries = [
     bgGradient: 'from-emerald-500 to-red-600'
   },
   {
-    id: 8,
+    id: 9,
     name: 'Saudi Arabia',
     flag: '/images/countries/saudi.png',
     image: '/images/countries/saudi.png',
@@ -130,7 +145,7 @@ const countries = [
     bgGradient: 'from-green-600 to-green-800'
   },
   {
-    id: 9,
+    id: 10,
     name: 'Romania',
     flag: '/images/countries/romania.png',
     image: '/images/countries/romania.png',
@@ -145,7 +160,7 @@ const countries = [
     bgGradient: 'from-blue-600 via-yellow-400 to-red-600'
   },
   {
-    id: 10,
+    id: 11,
     name: 'Thailand',
     flag: '/images/countries/thailand.png',
     image: '/images/countries/thailand.png',
@@ -298,7 +313,7 @@ const countryDetails = {
       averageSalary: 'AUD $50,000 - $80,000 per year'
     }
   },
-  2: { // Denmark
+  3: { // Denmark
     overview: {
       capital: 'Copenhagen',
       population: '5.8 million',
@@ -436,7 +451,7 @@ const countryDetails = {
       'Processing time: 2-3 months minimum'
     ]
   },
-  3: { // Canada
+  4: { // Canada
     overview: {
       capital: 'Ottawa',
       population: '38.2 million',
