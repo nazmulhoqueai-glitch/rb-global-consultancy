@@ -11,6 +11,21 @@ import { Globe, Clock, DollarSign, CheckCircle, Search, MapPin, Users, TrendingU
 const countries = [
   {
     id: 1,
+    name: 'Malaysia',
+    flag: '/images/countries/malaysia.png',
+    image: '/images/countries/malaysia.png',
+    continent: 'Asia',
+    visaTypes: ['Student Visa', 'Work Visa', 'Business Visa', 'Tourist Visa'],
+    processingTime: '4-6 weeks',
+    universities: 50,
+    successRate: 95,
+    popularCities: ['Kuala Lumpur', 'Penang', 'Johor Bahru', 'Kuching'],
+    description: 'Affordable education, multicultural society, and gateway to Southeast Asia.',
+    requirements: ['Valid Passport', 'Academic Certificates', 'IELTS Certificate', 'Medical Report'],
+    bgGradient: 'from-red-600 via-white to-blue-600'
+  },
+  {
+    id: 2,
     name: 'Australia',
     flag: '/images/countries/australia.png',
     image: '/images/countries/australia.png',
@@ -26,6 +41,21 @@ const countries = [
   },
   {
     id: 2,
+    name: 'Australia',
+    flag: '/images/countries/australia.png',
+    image: '/images/countries/australia.png',
+    continent: 'Oceania',
+    visaTypes: ['Student Visa', 'Work Visa', 'Tourist Visa', 'Business Visa'],
+    processingTime: '4-6 weeks',
+    universities: 45,
+    successRate: 95,
+    popularCities: ['Sydney', 'Melbourne', 'Brisbane', 'Perth'],
+    description: 'Known for world-class education, diverse culture, and excellent quality of life.',
+    requirements: ['Valid Passport', 'Financial Proof', 'Health Insurance', 'English Proficiency'],
+    bgGradient: 'from-yellow-400 to-green-500'
+  },
+  {
+    id: 3,
     name: 'Canada',
     flag: '/images/countries/canada.png',
     image: '/images/countries/canada.png',
@@ -40,7 +70,7 @@ const countries = [
     bgGradient: 'from-red-500 to-white'
   },
   {
-    id: 3,
+    id: 4,
     name: 'Denmark',
     flag: '/images/countries/denmark.png',
     image: '/images/countries/denmark.png',
@@ -55,7 +85,7 @@ const countries = [
     bgGradient: 'from-red-600 via-white to-red-600'
   },
   {
-    id: 4,
+    id: 5,
     name: 'United Kingdom',
     flag: '/images/countries/uk.png',
     image: '/images/countries/uk.png',
@@ -70,7 +100,7 @@ const countries = [
     bgGradient: 'from-blue-600 via-white to-red-600'
   },
   {
-    id: 5,
+    id: 6,
     name: 'United States',
     flag: '/images/countries/usa.png',
     image: '/images/countries/usa.png',
@@ -85,7 +115,7 @@ const countries = [
     bgGradient: 'from-blue-700 via-white to-red-600'
   },
   {
-    id: 6,
+    id: 7,
     name: 'Germany',
     flag: '/images/countries/mal.png',
     image: '/images/countries/mal.png',
@@ -100,7 +130,7 @@ const countries = [
     bgGradient: 'from-black via-red-600 to-yellow-400'
   },
   {
-    id: 7,
+    id: 8,
     name: 'France',
     flag: '/images/countries/france.png',
     image: '/images/countries/france.png',
@@ -115,7 +145,7 @@ const countries = [
     bgGradient: 'from-blue-600 via-white to-red-600'
   },
   {
-    id: 8,
+    id: 9,
     name: 'Dubai (UAE)',
     flag: '/images/countries/dubai.png',
     image: '/images/countries/dubai.png',
@@ -130,7 +160,7 @@ const countries = [
     bgGradient: 'from-emerald-500 to-red-600'
   },
   {
-    id: 9,
+    id: 10,
     name: 'Saudi Arabia',
     flag: '/images/countries/saudi.png',
     image: '/images/countries/saudi.png',
@@ -145,7 +175,7 @@ const countries = [
     bgGradient: 'from-green-600 to-green-800'
   },
   {
-    id: 10,
+    id: 11,
     name: 'Romania',
     flag: '/images/countries/romania.png',
     image: '/images/countries/romania.png',
@@ -160,7 +190,7 @@ const countries = [
     bgGradient: 'from-blue-600 via-yellow-400 to-red-600'
   },
   {
-    id: 11,
+    id: 12,
     name: 'China',
     flag: '/images/countries/china.png',
     image: '/images/countries/china.png',
@@ -175,7 +205,7 @@ const countries = [
     bgGradient: 'from-red-600 via-yellow-400 to-red-600'
   },
   {
-    id: 12,
+    id: 13,
     name: 'Malta',
     flag: '/images/countries/malta.png',
     image: '/images/countries/malta.png',
@@ -190,7 +220,7 @@ const countries = [
     bgGradient: 'from-red-600 via-white to-red-600'
   },
   {
-    id: 13,
+    id: 14,
     name: 'Thailand',
     flag: '/images/countries/thailand.png',
     image: '/images/countries/thailand.png',
@@ -210,7 +240,161 @@ const continents = ['All', 'Asia', 'Europe', 'North America', 'Oceania', 'Middle
 
 // Detailed country information
 const countryDetails = {
-  1: { // Australia
+  1: { // Malaysia
+    overview: {
+      capital: 'Kuala Lumpur',
+      population: '33.9 million',
+      currency: 'Malaysian Ringgit (MYR)',
+      language: 'Malay, English',
+      timeZone: 'UTC+8',
+      climate: 'Tropical',
+      majorCities: ['Kuala Lumpur', 'Penang', 'Johor Bahru', 'Kuching', 'Kota Kinabalu'],
+      whyChoose: [
+        'Affordable education',
+        'Multicultural society',
+        'Gateway to Southeast Asia',
+        'English-speaking country',
+        'Safe and peaceful',
+        'Rich cultural heritage'
+      ]
+    },
+    studentVisa: {
+      types: ['Student Visa', 'Work Visa', 'Business Visa', 'Tourist Visa'],
+      requirements: [
+        'Valid passport (minimum 18 months validity)',
+        'Academic certificates and transcripts',
+        'Passport-size photos (white background)',
+        'IELTS/English certificate (if required)',
+        'Application form (filled & signed)',
+        'Medical declaration form',
+        'EMGS processing fee'
+      ],
+      processingTime: '4-6 weeks',
+      fees: 'EMGS Processing Fee (paid by university)',
+      workRights: 'Limited work rights during study'
+    },
+    documents: {
+      admission: [
+        'Valid Passport (minimum 18 months validity)',
+        'Academic Certificates & Transcripts (SSC, HSC, Bachelor, etc.)',
+        'Passport-size Photos (white background)',
+        'IELTS/English Certificate (if required)',
+        'Application Form (filled & signed)',
+        'Registration or admission fee'
+      ],
+      visa: [
+        'Offer Letter from university',
+        'Passport Copy',
+        'Academic Certificates',
+        'Medical Declaration Form',
+        'EMGS Processing Fee (paid by university)',
+        'Visa Approval Letter (VAL)',
+        'Medical Report',
+        'Passport-size Photos',
+        'Travel Insurance',
+        'Flight Ticket',
+        'Accommodation Confirmation',
+        'Financial Proof',
+        'University Registration Documents'
+      ],
+      forms: [
+        'University Application Form',
+        'Medical Declaration Form',
+        'EMGS Application Form',
+        'Student Pass Application',
+        'i-Kad Application Form'
+      ]
+    },
+    universities: {
+      topUniversities: [
+        'Universiti Teknologi Malaysia (UTM)',
+        'Asia Pacific University (APU)',
+        'Multimedia University (MMU)',
+        'INTI International University',
+        'SEGi University',
+        'Limkokwing University',
+        'Taylor\'s University',
+        'University of Malaya',
+        'Universiti Putra Malaysia',
+        'Universiti Kebangsaan Malaysia'
+      ],
+      popularCourses: [
+        'Engineering & Technology',
+        'Business Administration',
+        'Computer Science',
+        'Tourism & Hospitality',
+        'Medicine',
+        'Arts & Design',
+        'Languages',
+        'Social Sciences'
+      ]
+    },
+    costs: {
+      tuition: {
+        undergraduate: '15,000-35,000 MYR per year',
+        postgraduate: '20,000-45,000 MYR per year',
+        phd: '25,000-50,000 MYR per year'
+      },
+      living: {
+        accommodation: '800-2,000 MYR per month',
+        food: '600-1,200 MYR per month',
+        transport: '200-400 MYR per month',
+        utilities: '150-300 MYR per month',
+        total: '1,750-3,900 MYR per month'
+      }
+    },
+    workOpportunities: {
+      duringStudy: 'Limited work rights during study',
+      afterGraduation: 'Work visa available after graduation',
+      popularJobs: [
+        'Software Developer',
+        'Business Analyst',
+        'Engineer',
+        'Tourism Professional',
+        'Teacher',
+        'Healthcare Professional'
+      ],
+      averageSalary: '3,000-8,000 MYR per month'
+    },
+    process: {
+      steps: [
+        'Start Your Journey – University Application',
+        'Receive Offer Letter',
+        'Apply for Visa Approval Letter (VAL)',
+        'Pre-Arrival Medical Check-Up',
+        'Visa Stamping & Flight Preparation',
+        'Arrival in Malaysia'
+      ],
+      details: [
+        'Choose university and prepare documents (passport, certificates, photos, IELTS)',
+        'Receive offer letter and pay registration/admission fee',
+        'Apply for VAL through EMGS with offer letter, passport, certificates, medical form',
+        'Complete medical check-up at EMGS-approved center',
+        'Apply for entry visa at Malaysian High Commission and prepare travel documents',
+        'Arrive in Malaysia, register at university, complete post-arrival medical check-up, submit passport for student pass sticker, collect i-Kad'
+      ]
+    },
+    checklist: {
+      summary: [
+        'University Application: Passport, Certificates, Photos',
+        'Offer Letter: Admission/Registration Fee',
+        'VAL Application (via EMGS): Offer Letter, Passport, Medical Form',
+        'Pre-arrival Medical: EMGS Approved Clinic Report',
+        'Visa Stamping: VAL, Passport, Offer Letter',
+        'Arrival & Student Pass: Medical, Registration, i-Kad'
+      ]
+    },
+    specialNotes: [
+      'Keep both hard copies and soft copies (PDF) of every document',
+      'Track visa progress at https://educationmalaysia.gov.my',
+      'EMGS processing fee is paid by your university',
+      'Post-arrival medical check-up must be done within 7 days',
+      'Student Pass sticker is required for long-term stay',
+      'i-Kad serves as your student ID in Malaysia',
+      'Shortcut: Apply → Offer Letter → VAL → Entry Visa → Fly → Medical → Student Passport'
+    ]
+  },
+  2: { // Australia
     overview: {
       capital: 'Canberra',
       population: '25.7 million',
@@ -343,7 +527,7 @@ const countryDetails = {
       averageSalary: 'AUD $50,000 - $80,000 per year'
     }
   },
-  3: { // Denmark
+  4: { // Denmark
     overview: {
       capital: 'Copenhagen',
       population: '5.8 million',
@@ -481,7 +665,7 @@ const countryDetails = {
       'Processing time: 2-3 months minimum'
     ]
   },
-  4: { // Canada
+  3: { // Canada
     overview: {
       capital: 'Ottawa',
       population: '38.2 million',
@@ -630,7 +814,7 @@ const countryDetails = {
       'Post-graduation work permit available for 1-3 years'
     ]
   },
-  11: { // China
+  12: { // China
     overview: {
       capital: 'Beijing',
       population: '1.4 billion',
@@ -794,7 +978,7 @@ const countryDetails = {
       'Health check required for X1 visa holders at designated hospital'
     ]
   },
-  12: { // Malta
+  13: { // Malta
     overview: {
       capital: 'Valletta',
       population: '520,000',
@@ -1749,6 +1933,30 @@ const CountriesPage = () => {
                                   <p>{details.visaTypes.x2.requirements}</p>
                                 </div>
                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Checklist Summary (Malaysia specific) */}
+                      {'checklist' in details && details.checklist && (
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <CheckCircle className="w-6 h-6 mr-2 text-red-600" />
+                            Student Visa Checklist Summary
+                          </h3>
+                          <div className="bg-blue-50 rounded-lg p-4">
+                            <div className="space-y-3">
+                              {details.checklist.summary.map((item, index) => (
+                                <div key={index} className="flex items-start space-x-3">
+                                  <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                                    {index + 1}
+                                  </div>
+                                  <div className="flex-1">
+                                    <p className="text-gray-800 font-medium">{item}</p>
+                                  </div>
+                                </div>
+                              ))}
                             </div>
                           </div>
                         </div>
