@@ -1284,6 +1284,10 @@ const CountriesPage = () => {
                             alt={country.name}
                             fill
                             className="object-cover"
+                            onError={(e) => {
+                              console.error('Image failed to load:', country.flag);
+                              e.currentTarget.style.display = 'none';
+                            }}
                           />
                         </div>
                         <h3 className="text-2xl font-bold text-white drop-shadow-lg">{country.name}</h3>
@@ -1440,6 +1444,10 @@ const CountriesPage = () => {
                             width={64}
                             height={64}
                             className="object-cover"
+                            onError={(e) => {
+                              console.error('Modal image failed to load:', country.flag);
+                              e.currentTarget.style.display = 'none';
+                            }}
                           />
                         </div>
                         <div>
