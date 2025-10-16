@@ -435,6 +435,155 @@ const countryDetails = {
       'Family applicants need 13 Lakh BDT bank statement for 2 months',
       'Processing time: 2-3 months minimum'
     ]
+  },
+  3: { // Canada
+    overview: {
+      capital: 'Ottawa',
+      population: '38.2 million',
+      currency: 'Canadian Dollar (CAD)',
+      language: 'English, French',
+      timeZone: 'UTC-3.5 to UTC-8',
+      climate: 'Continental, Arctic',
+      majorCities: ['Toronto', 'Vancouver', 'Montreal', 'Calgary', 'Edmonton'],
+      whyChoose: [
+        'World-class education system',
+        'Multicultural society',
+        'Post-graduation work permit',
+        'High quality of life',
+        'Safe and peaceful country',
+        'Strong economy and job market'
+      ]
+    },
+    studentVisa: {
+      types: ['Study Permit', 'Post-Graduation Work Permit', 'Visitor Visa'],
+      requirements: [
+        'Valid passport',
+        'Letter of Acceptance from Canadian institution',
+        'Proof of financial support',
+        'Medical examination',
+        'Police clearance certificate',
+        'English/French proficiency test',
+        'Statement of Purpose',
+        'Academic documents'
+      ],
+      processingTime: '8-12 weeks',
+      fees: '150 CAD (Application) + 135 CAD (Embassy) + 85 CAD (Biometric)',
+      workRights: '20 hours per week during study, full-time during holidays'
+    },
+    documents: {
+      admission: [
+        'Passport copy (previous & current data) - Bio-data page',
+        'Birth Certificate / National ID card',
+        'All academic certificates & transcript along with backlogs',
+        'Internship Certificate & Medium of English Certificate (if any)',
+        'Testimonial or Teacher\'s Recommendation Letter (if any)',
+        'IELTS / PTE / TOEFL / GRE / GMAT / SAT / DUOLINGO result',
+        'Study plan',
+        'Updated Resume / CV (if applicable for PG Students)',
+        'Job experience certificate (if applicable)',
+        'Salary pay slip last 6 months or salary account statement',
+        'Current Studentship letter & Semester\'s Transcript (where required)',
+        'Sponsor\'s Original Bank Solvency Certificate & Statement (Main Fund)'
+      ],
+      visa: [
+        'Valid passport with sufficient validity',
+        'Letter of Acceptance from Canadian institution',
+        'Proof of financial support (bank statements, sponsorship letters)',
+        'Medical examination results',
+        'Police clearance certificate (home & abroad)',
+        'English/French proficiency test results',
+        'Academic transcripts and certificates',
+        'Statement of Purpose (SOP)',
+        'Recommendation letters',
+        'CV/Resume',
+        'Passport-sized photographs',
+        'Travel history documentation',
+        'Accommodation proof in Canada',
+        'Health insurance documentation',
+        'Family information forms'
+      ],
+      forms: [
+        'Study permit application form',
+        'Financial guarantee form',
+        'Medical examination form',
+        'Police clearance application',
+        'Family information form (if applicable)'
+      ]
+    },
+    universities: {
+      topUniversities: [
+        'University of Toronto',
+        'University of British Columbia',
+        'McGill University',
+        'University of Alberta',
+        'McMaster University',
+        'University of Waterloo',
+        'Queen\'s University',
+        'University of Calgary',
+        'Simon Fraser University',
+        'University of Ottawa'
+      ],
+      popularCourses: [
+        'Business Administration',
+        'Engineering & Technology',
+        'Computer Science',
+        'Medicine & Health Sciences',
+        'Environmental Sciences',
+        'Social Sciences',
+        'Arts & Humanities',
+        'Natural Sciences'
+      ]
+    },
+    costs: {
+      tuition: {
+        undergraduate: '15,000-35,000 CAD per year',
+        postgraduate: '18,000-40,000 CAD per year',
+        phd: '8,000-20,000 CAD per year'
+      },
+      living: {
+        accommodation: '800-1,500 CAD per month',
+        food: '400-600 CAD per month',
+        transport: '100-200 CAD per month',
+        utilities: '150-300 CAD per month',
+        total: '1,450-2,600 CAD per month'
+      }
+    },
+    workOpportunities: {
+      duringStudy: '20 hours per week during study',
+      afterGraduation: 'Post-Graduation Work Permit (1-3 years)',
+      popularJobs: [
+        'Software Developer',
+        'Business Analyst',
+        'Engineer',
+        'Healthcare Professional',
+        'Teacher',
+        'Consultant'
+      ],
+      averageSalary: '45,000-75,000 CAD per year'
+    },
+    moi: {
+      title: 'Medium of Instruction (MOI) Option',
+      requirements: [
+        'SSC & HSC must have A Grade in English',
+        'University ranking must be in top 15',
+        'H.S.C from 2014/15/17 but no Bachelor certificate needs to be arranged'
+      ],
+      note: 'If IELTS/PTE/TOEFL/GRE/GMAT/SAT/DUOLINGO not available, MOI can be used'
+    },
+    payment: {
+      application: '150 CAD (Canadian Dollar)',
+      embassy: '135 CAD',
+      biometric: '85 CAD',
+      commitment: 'BDT 5,000/- (Non-refundable, no service charge after visa)',
+      university: 'Student must pay partial payment according to university'
+    },
+    specialNotes: [
+      'Non-refundable Application Fee USD 100 (approx.) required to pay I-20',
+      'SEVIS fee US$ 350 required to pay must',
+      'Police Clearance Certificate (Home & Abroad) need to submit during visa application',
+      'MOI option available if English test scores not available',
+      'Post-graduation work permit available for 1-3 years'
+    ]
   }
 }
 
@@ -1062,7 +1211,67 @@ const CountriesPage = () => {
                         </div>
                       </div>
 
-                      {/* Special Notes (Denmark specific) */}
+                      {/* MOI Option (Canada specific) */}
+                      {details.moi && (
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <FileText className="w-6 h-6 mr-2 text-red-600" />
+                            {details.moi.title}
+                          </h3>
+                          <div className="bg-blue-50 rounded-lg p-4 mb-4">
+                            <p className="text-blue-800 font-semibold mb-3">{details.moi.note}</p>
+                            <h4 className="text-lg font-semibold text-blue-800 mb-3">Requirements:</h4>
+                            <ul className="space-y-2">
+                              {details.moi.requirements.map((req, index) => (
+                                <li key={index} className="flex items-start space-x-2">
+                                  <CheckCircle className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                                  <span className="text-gray-700">{req}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Payment Details (Canada specific) */}
+                      {details.payment && (
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <DollarSign className="w-6 h-6 mr-2 text-red-600" />
+                            Payment Details
+                          </h3>
+                          <div className="bg-yellow-50 rounded-lg p-4">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              <div className="space-y-2">
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Application Fee:</span>
+                                  <span className="font-semibold">{details.payment.application}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Embassy Fee:</span>
+                                  <span className="font-semibold">{details.payment.embassy}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Biometric Fee:</span>
+                                  <span className="font-semibold">{details.payment.biometric}</span>
+                                </div>
+                              </div>
+                              <div className="space-y-2">
+                                <div className="flex justify-between">
+                                  <span className="text-gray-600">Commitment Fee:</span>
+                                  <span className="font-semibold">{details.payment.commitment}</span>
+                                </div>
+                                <div className="text-sm text-gray-600 mt-2">
+                                  <p className="font-semibold">Note:</p>
+                                  <p>{details.payment.university}</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Special Notes */}
                       {details.specialNotes && (
                         <div>
                           <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
