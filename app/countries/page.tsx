@@ -581,7 +581,7 @@ const CountriesPage = () => {
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="bg-white rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden shadow-2xl"
+              className="bg-white rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden shadow-2xl flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
               {(() => {
@@ -591,9 +591,9 @@ const CountriesPage = () => {
                 if (!country || !details) return null
 
                 return (
-                  <div className="h-full overflow-y-auto">
+                  <>
                     {/* Modal Header */}
-                    <div className={`relative bg-gradient-to-r ${country.bgGradient} p-6 text-white`}>
+                    <div className={`relative bg-gradient-to-r ${country.bgGradient} p-6 text-white flex-shrink-0`}>
                       <button
                         onClick={() => setSelectedCountry(null)}
                         className="absolute top-4 right-4 p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
@@ -619,7 +619,7 @@ const CountriesPage = () => {
                     </div>
 
                     {/* Modal Content */}
-                    <div className="p-6 space-y-8">
+                    <div className="p-6 space-y-8 overflow-y-auto flex-1">
                       {/* Overview Section */}
                       <div>
                         <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
@@ -904,7 +904,7 @@ const CountriesPage = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </>
                 )
               })()}
             </motion.div>
