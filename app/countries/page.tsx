@@ -12,8 +12,8 @@ const countries = [
   {
     id: 1,
     name: 'Malaysia',
-    flag: '/images/countries/malaysia.png',
-    image: '/images/countries/malaysia.png',
+    flag: '/images/countries/Malaysia.jpg',
+    image: '/images/countries/Malaysia.jpg',
     continent: 'Asia',
     visaTypes: ['Student Visa', 'Work Visa', 'Business Visa', 'Tourist Visa'],
     processingTime: '4-6 weeks',
@@ -23,21 +23,6 @@ const countries = [
     description: 'Affordable education, multicultural society, and gateway to Southeast Asia.',
     requirements: ['Valid Passport', 'Academic Certificates', 'IELTS Certificate', 'Medical Report'],
     bgGradient: 'from-red-600 via-white to-blue-600'
-  },
-  {
-    id: 2,
-    name: 'Australia',
-    flag: '/images/countries/australia.png',
-    image: '/images/countries/australia.png',
-    continent: 'Oceania',
-    visaTypes: ['Student Visa', 'Work Visa', 'Tourist Visa', 'Business Visa'],
-    processingTime: '4-6 weeks',
-    universities: 45,
-    successRate: 95,
-    popularCities: ['Sydney', 'Melbourne', 'Brisbane', 'Perth'],
-    description: 'Known for world-class education, diverse culture, and excellent quality of life.',
-    requirements: ['Valid Passport', 'Financial Proof', 'Health Insurance', 'English Proficiency'],
-    bgGradient: 'from-yellow-400 to-green-500'
   },
   {
     id: 2,
@@ -72,8 +57,8 @@ const countries = [
   {
     id: 4,
     name: 'Denmark',
-    flag: '/images/countries/denmark.png',
-    image: '/images/countries/denmark.png',
+    flag: '/images/countries/Denmark.jpg',
+    image: '/images/countries/Denmark.jpg',
     continent: 'Europe',
     visaTypes: ['Student Visa', 'Work Visa', 'Family Reunification Visa'],
     processingTime: '2-3 months',
@@ -192,8 +177,8 @@ const countries = [
   {
     id: 12,
     name: 'China',
-    flag: '/images/countries/china.png',
-    image: '/images/countries/china.png',
+    flag: '/images/countries/China.jpg',
+    image: '/images/countries/China.jpg',
     continent: 'Asia',
     visaTypes: ['Student Visa (X1)', 'Student Visa (X2)', 'Work Visa', 'Business Visa'],
     processingTime: '7-15 working days',
@@ -207,8 +192,8 @@ const countries = [
   {
     id: 13,
     name: 'Malta',
-    flag: '/images/countries/malta.png',
-    image: '/images/countries/malta.png',
+    flag: '/images/countries/Malta.jpg',
+    image: '/images/countries/Malta.jpg',
     continent: 'Europe',
     visaTypes: ['Student Visa', 'Work Visa', 'Business Visa', 'Tourist Visa'],
     processingTime: '20 days',
