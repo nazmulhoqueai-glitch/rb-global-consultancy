@@ -16,7 +16,7 @@ const teamMembers = [
     image: '/images/team/ceo.jpg',
     bgColor: 'bg-yellow-50',
     email: 'rafi@r&bglobalconsultancy.com',
-    phone: '+8801814-195219',
+    phone: '+880182999222',
     bio: 'With over 12 years of experience in immigration consulting, Abdul Momen Rafi founded R&B Global Consultancy to help individuals achieve their dreams of studying, working, and living abroad. His expertise and dedication have helped thousands of clients successfully navigate complex immigration processes.',
     expertise: [
       'Immigration Law & Policy',
@@ -25,12 +25,12 @@ const teamMembers = [
       'International Education Consulting'
     ],
     achievements: [
-      '12+ Years Experience',
+      '10+ Years Experience',
       '5000+ Successful Cases',
       '98% Success Rate'
     ],
     socials: {
-      facebook: 'https://facebook.com/rbglobal11',
+      facebook: 'https://www.facebook.com/momen.rafi.3',
       twitter: 'https://twitter.com',
       linkedin: 'https://linkedin.com',
       instagram: 'https://instagram.com'
@@ -52,7 +52,7 @@ const teamMembers = [
       'Family Immigration'
     ],
     achievements: [
-      '10+ Years Experience',
+      '6+ Years Experience',
       'Client Satisfaction Expert',
       'Strategic Planning Specialist'
     ],
@@ -70,7 +70,7 @@ const teamMembers = [
     image: '/images/team/consultant1.jpg',
     bgColor: 'bg-green-50',
     email: 'sajjad@r&bglobalconsultancy.com',
-    phone: '+8801814-195219',
+    phone: '+8801891656032',
     bio: 'MD Sajjad Hossain specializes in student and work visa applications, with a deep understanding of visa requirements for major destinations. His attention to detail and commitment to excellence have resulted in numerous successful visa approvals.',
     expertise: [
       'Student Visa Processing',
@@ -79,8 +79,8 @@ const teamMembers = [
       'Embassy Liaison'
     ],
     achievements: [
-      '8+ Years Experience',
-      '2000+ Visa Approvals',
+      '3 Years Experience',
+      '500+ Visa Approvals',
       'University Partnership Expert'
     ],
     socials: {
@@ -106,7 +106,7 @@ const teamMembers = [
       'Service Coordination'
     ],
     achievements: [
-      '5+ Years Experience',
+      '1+ Years Experience',
       'Customer Satisfaction Leader',
       'Quick Response Specialist'
     ],
@@ -133,7 +133,7 @@ const teamMembers = [
       'Client Acquisition'
     ],
     achievements: [
-      '6+ Years Experience',
+      '2+ Years Experience',
       '50+ Strategic Partnerships',
       'Business Growth Expert'
     ],
@@ -151,7 +151,7 @@ const teamMembers = [
     image: '/images/team/consultant5.jpg',
     bgColor: 'bg-teal-50',
     email: 'wasim@r&bglobalconsultancy.com',
-    phone: '+8801814-195219',
+    phone: '+8801960-083147',
     bio: 'Arshad Khan Wasim leads our regional sales efforts, bringing innovative strategies and a deep understanding of client needs. His leadership in developing and executing sales initiatives has been instrumental in establishing R&B Global Consultancy as a trusted name in immigration services across the region.',
     expertise: [
       'Sales Strategy',
@@ -160,7 +160,7 @@ const teamMembers = [
       'Client Engagement'
     ],
     achievements: [
-      '7+ Years Experience',
+      '5+ Years Experience',
       'Regional Sales Leader',
       'Revenue Growth Specialist'
     ],
@@ -178,7 +178,7 @@ const teamMembers = [
     image: '/images/team/consultant2.jpg',
     bgColor: 'bg-purple-50',
     email: 'abid@r&bglobalconsultancy.com',
-    phone: '+8801814-195219',
+    phone: '+8801305-577022',
     bio: 'MD Abid manages the day-to-day operations and administrative functions of R&B Global Consultancy. His organizational skills and attention to detail ensure smooth workflow, efficient document processing, and seamless coordination between different departments for optimal client service delivery.',
     expertise: [
       'Office Management',

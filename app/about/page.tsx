@@ -24,7 +24,7 @@ const AboutPage = () => {
             About R&B Global Consultancy
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
-            Your trusted partner in immigration and visa consulting services since 2012.
+            Your trusted partner in immigration and visa consulting services since 2014.
           </p>
         </div>
       </section>

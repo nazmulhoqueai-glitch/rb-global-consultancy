@@ -476,7 +476,7 @@ const GalleryPage = () => {
               Join hundreds of satisfied clients who have achieved their visa goals with our expert guidance
             </p>
             <motion.a
-              href="https://wa.me/8801814195219?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20visa%20consultation."
+              href="https://wa.me/0182999222?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20visa%20consultation."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-red-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg"

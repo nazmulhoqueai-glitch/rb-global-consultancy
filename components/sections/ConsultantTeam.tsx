@@ -34,45 +34,6 @@ const consultants = [
   },
   {
     id: 3,
-    name: 'MD Sajjad Hossain',
-    role: 'Senior Visa Consultant',
-    image: '/images/team/consultant1.jpg',
-    bgColor: 'bg-green-50',
-    socials: {
-      facebook: 'https://facebook.com',
-      twitter: 'https://twitter.com',
-      linkedin: 'https://linkedin.com',
-      instagram: 'https://instagram.com'
-    }
-  },
-  {
-    id: 4,
-    name: 'Taharatul Sikdar Minar',
-    role: 'Customer Service Officer',
-    image: '/images/team/consultant3.jpg',
-    bgColor: 'bg-red-50',
-    socials: {
-      facebook: 'https://facebook.com',
-      twitter: 'https://twitter.com',
-      linkedin: 'https://linkedin.com',
-      instagram: 'https://instagram.com'
-    }
-  },
-  {
-    id: 5,
-    name: 'Mohammad Ibrahim',
-    role: 'Business Development Officer',
-    image: '/images/team/consultant4.jpg',
-    bgColor: 'bg-red-50',
-    socials: {
-      facebook: 'https://facebook.com',
-      twitter: 'https://twitter.com',
-      linkedin: 'https://linkedin.com',
-      instagram: 'https://instagram.com'
-    }
-  },
-  {
-    id: 6,
     name: 'Arshad Khan Wasim',
     role: 'Regional Sales Director',
     image: '/images/team/consultant5.jpg',
@@ -85,8 +46,48 @@ const consultants = [
     }
   },
   {
+    id: 4,
+    name: 'Mishkatur Rahman Sajid',
+    role: 'Administration officer',
+    image: '/images/team/consultant1.jpg',
+    bgColor: 'bg-green-50',
+    socials: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com'
+    }
+  },
+  {
+    id: 5,
+    name: 'Taharatul Sikdar Minar',
+    role: 'Customer Service Officer',
+    image: '/images/team/consultant3.jpg',
+    bgColor: 'bg-red-50',
+    socials: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com'
+    }
+  },
+  {
+    id: 6,
+    name: 'Mohammad Ibrahim',
+    role: 'Business Development Officer',
+    image: '/images/team/consultant4.jpg',
+    bgColor: 'bg-red-50',
+    socials: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com'
+    }
+  },
+  
+  {
     id: 7,
-    name: 'MD Abid',
+    name: 'Abdun Nur Tusher Abid',
     role: 'Office Executive',
     image: '/images/team/consultant2.jpg',
     bgColor: 'bg-purple-50',

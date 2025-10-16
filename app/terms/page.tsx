@@ -346,7 +346,7 @@ const TermsConditionsPage = () => {
                     <Scale className="w-5 h-5 text-red-600 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-gray-900">Phone:</p>
-                      <a href="tel:+8801814195219" className="text-red-600 hover:text-red-700">
+                      <a href="tel:+0182999222" className="text-red-600 hover:text-red-700">
                         +8801814-195219
                       </a>
                     </div>

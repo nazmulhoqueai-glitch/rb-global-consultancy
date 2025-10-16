@@ -87,7 +87,7 @@ const HeroSlider = () => {
                 {slide.subtitle}
               </p>
               <a 
-                href="https://wa.me/8801814195219?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20visa%20consultation."
+                href="https://wa.me/0182999222?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20visa%20consultation."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-red-600 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 text-sm sm:text-base rounded-md hover:bg-red-700 transition-colors"

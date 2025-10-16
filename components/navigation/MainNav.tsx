@@ -117,12 +117,12 @@ const MainNav = () => {
           <div className="hidden md:flex items-center space-x-3 lg:space-x-4">
             <div className="flex flex-col items-end">
               <span className="text-gray-600 text-xs lg:text-sm">PHONE:</span>
-              <a href="tel:+8801814195219" className="text-red-600 font-semibold hover:text-red-700 text-sm lg:text-base">
+              <a href="tel:+0182999222" className="text-red-600 font-semibold hover:text-red-700 text-sm lg:text-base">
                 +8801814-195219
               </a>
             </div>
             <a
-              href="https://wa.me/8801814195219?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20visa%20services."
+              href="https://wa.me/0182999222?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20visa%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-600 text-white px-4 lg:px-6 py-2 rounded-md hover:bg-red-700 transition-colors text-sm lg:text-base whitespace-nowrap"
@@ -217,12 +217,12 @@ const MainNav = () => {
             </Link>
             <div className="flex flex-col space-y-1 py-2">
               <span className="text-gray-600 text-sm">PHONE:</span>
-              <a href="tel:+8801814195219" className="text-red-600 font-semibold text-base">
+              <a href="tel:+0182999222" className="text-red-600 font-semibold text-base">
                 +8801814-195219
               </a>
             </div>
             <a
-              href="https://wa.me/8801814195219?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20visa%20services."
+              href="https://wa.me/0182999222?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20visa%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700 transition-colors text-center text-base"
