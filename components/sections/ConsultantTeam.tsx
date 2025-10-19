@@ -49,7 +49,7 @@ const consultants = [
     id: 4,
     name: 'Mishkatur Rahman Sajid',
     role: 'Administration officer',
-    image: '/images/team/consultant1.jpg',
+    image: '/images/team/consultant1.JPEG',
     bgColor: 'bg-green-50',
     socials: {
       facebook: 'https://facebook.com',

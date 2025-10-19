@@ -180,8 +180,8 @@ const ContactPage = () => {
                     <div>
                       <h3 className="text-lg font-semibold mb-1">Email Address</h3>
                       <p className="text-gray-600">
-                        <a href="mailto:info@r&bglobalconsultancy.com" className="hover:text-red-600 transition-colors">
-                          info@r&bglobalconsultancy.com
+                        <a href="mailto:info@rnbgc.com" className="hover:text-red-600 transition-colors">
+                          info@rnbgc.com
                         </a>
                       </p>
                     </div>

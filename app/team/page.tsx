@@ -15,7 +15,7 @@ const teamMembers = [
     role: 'CEO & Founder',
     image: '/images/team/CEO.jpg',
     bgColor: 'bg-yellow-50',
-    email: 'rafi@r&bglobalconsultancy.com',
+    email: 'rafi@rnbgc.com',
     phone: '+880182999222',
     bio: 'My name is Abdul Momen Rafi, and I am the founder of R&B Global Consultancy and Rafi Air International. I completed my higher studies in Malaysia, where I also gained valuable professional experience working for CBL Money Transfer (The City Bank) Malaysia as a Customer Service Executive for around four years. Living and working abroad taught me how important the right guidance is for students who dream of studying overseas. Since 2014, I have been actively involved in the student visa and global education consultancy sector. Over the past decade, I have had the privilege of guiding more than 5,000 students toward successful admissions and visas to top universities in Malaysia, the UK, Canada, China, Russia, and various European countries. Through R&B Global Consultancy, my mission is to make international education easier, safer, and more accessible for Bangladeshi students. I believe that every student deserves a chance to build a global career, and proper guidance can make that dream come true. "My goal is not just to send students abroad — but to help them build a successful future."',
     expertise: [
@@ -42,7 +42,7 @@ const teamMembers = [
     role: 'Director',
     image: '/images/team/director.jpg',
     bgColor: 'bg-blue-50',
-    email: 'director@r&bglobalconsultancy.com',
+    email: 'director@rnbgc.com',
     phone: '+8801814-195219',
     bio: 'As Director of R&B Global Consultancy, Doulatun Nesa brings extensive experience in operational management and client relations. She ensures every client receives personalized attention and comprehensive support throughout their immigration journey.',
     expertise: [
@@ -69,7 +69,7 @@ const teamMembers = [
     role: 'Administration officer',
     image: '/images/team/consultant1.JPEG',
     bgColor: 'bg-green-50',
-    email: 'sajjad@r&bglobalconsultancy.com',
+    email: 'sajjad@rnbgc.com',
     phone: '+8801891656032',
     bio: 'MD Sajjad Hossain specializes in student and work visa applications, with a deep understanding of visa requirements for major destinations. His attention to detail and commitment to excellence have resulted in numerous successful visa approvals.',
     expertise: [
@@ -96,7 +96,7 @@ const teamMembers = [
     role: 'Customer Service Officer',
     image: '/images/team/consultant3.jpg',
     bgColor: 'bg-red-50',
-    email: 'minar@r&bglobalconsultancy.com',
+    email: 'minar@rnbgc.com',
     phone: '+8801814-195219',
     bio: 'Taharatul Sikdar Minar is dedicated to providing exceptional customer service and support to all our clients. With excellent communication skills and a client-first approach, he ensures every inquiry is handled with care and professionalism, making the visa application experience smooth and welcoming.',
     expertise: [
@@ -123,7 +123,7 @@ const teamMembers = [
     role: 'Business Development Officer',
     image: '/images/team/consultant4.jpg',
     bgColor: 'bg-orange-50',
-    email: 'ibrahim@r&bglobalconsultancy.com',
+    email: 'ibrahim@rnbgc.com',
     phone: '+8801814-195219',
     bio: 'Mohammad Ibrahim drives business growth and develops strategic partnerships for R&B Global Consultancy. His expertise in identifying new opportunities and building strong relationships with educational institutions and partners worldwide has significantly expanded our service reach and client base.',
     expertise: [
@@ -150,7 +150,7 @@ const teamMembers = [
     role: 'Regional Sales Director',
     image: '/images/team/consultant5.jpg',
     bgColor: 'bg-teal-50',
-    email: 'wasim@r&bglobalconsultancy.com',
+    email: 'wasim@rnbgc.com',
     phone: '+8801960-083147',
     bio: 'Arshad Khan Wasim leads our regional sales efforts, bringing innovative strategies and a deep understanding of client needs. His leadership in developing and executing sales initiatives has been instrumental in establishing R&B Global Consultancy as a trusted name in immigration services across the region.',
     expertise: [
@@ -177,7 +177,7 @@ const teamMembers = [
     role: 'Office Executive',
     image: '/images/team/consultant2.jpg',
     bgColor: 'bg-purple-50',
-    email: 'abid@r&bglobalconsultancy.com',
+    email: 'abid@rnbgc.com',
     phone: '+8801305-577022',
     bio: 'MD Abid manages the day-to-day operations and administrative functions of R&B Global Consultancy. His organizational skills and attention to detail ensure smooth workflow, efficient document processing, and seamless coordination between different departments for optimal client service delivery.',
     expertise: [
@@ -262,7 +262,7 @@ const TeamPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <div className="text-3xl sm:text-4xl font-bold text-red-600 mb-2">53+</div>
+              <div className="text-3xl sm:text-4xl font-bold text-red-600 mb-2">10+</div>
               <div className="text-gray-600 text-sm sm:text-base">Years Combined Experience</div>
             </motion.div>
             <motion.div 
@@ -282,7 +282,7 @@ const TeamPage = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <div className="text-3xl sm:text-4xl font-bold text-red-600 mb-2">50+</div>
+              <div className="text-3xl sm:text-4xl font-bold text-red-600 mb-2">20+</div>
               <div className="text-gray-600 text-sm sm:text-base">Countries Served</div>
             </motion.div>
             <motion.div 
@@ -317,10 +317,10 @@ const TeamPage = () => {
                 {/* Image Section */}
                 <div className={`md:w-2/5 relative ${member.bgColor}`}>
                   <div className="relative h-64 sm:h-80 md:h-full min-h-[400px]">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
                       className="object-cover object-center"
                     />
                   </div>
@@ -336,20 +336,20 @@ const TeamPage = () => {
                       <p className="text-red-600 font-semibold text-lg">{member.role}</p>
                     </div>
                     <div className="flex space-x-2">
-                      <a 
-                        href={member.socials.facebook} 
+                    <a
+                      href={member.socials.facebook}
                         className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-red-600 hover:text-white transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                         <Facebook size={16} />
-                      </a>
-                      <a 
-                        href={member.socials.linkedin} 
+                    </a>
+                    <a
+                      href={member.socials.linkedin}
                         className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-red-600 hover:text-white transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                         <Linkedin size={16} />
                       </a>
                     </div>
@@ -374,8 +374,8 @@ const TeamPage = () => {
                           {skill}
                         </span>
                       ))}
-                    </div>
                   </div>
+                </div>
 
                   {/* Achievements */}
                   <div className="mb-6">
@@ -388,9 +388,9 @@ const TeamPage = () => {
                         <li key={idx} className="flex items-center text-gray-600 text-sm sm:text-base">
                           <span className="w-1.5 h-1.5 bg-red-600 rounded-full mr-3"></span>
                           {achievement}
-                        </li>
-                      ))}
-                    </ul>
+                      </li>
+                    ))}
+                  </ul>
                   </div>
 
                   {/* Contact Info */}
@@ -447,4 +447,4 @@ const TeamPage = () => {
   )
 }
 
-export default TeamPage
+export default TeamPage 

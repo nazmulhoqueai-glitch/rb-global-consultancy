@@ -245,8 +245,8 @@ const PrivacyPolicyPage = () => {
                     <Mail className="w-5 h-5 text-red-600 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-gray-900">Email:</p>
-                      <a href="mailto:info@r&bglobalconsultancy.com" className="text-red-600 hover:text-red-700">
-                        info@r&bglobalconsultancy.com
+                      <a href="mailto:info@rnbgc.com" className="text-red-600 hover:text-red-700">
+                        info@rnbgc.com
                       </a>
                     </div>
                   </div>

@@ -40,7 +40,7 @@ const Footer = () => {
                   height={60}
                 />
                 <Image
-                  src="/logo-white2.jpeg"
+                  src="/logo-white2.JPEG"
                   alt="R&B Global Consultancy Secondary Logo"
                   width={150}
                   height={60}
@@ -93,6 +93,11 @@ const Footer = () => {
                 <li>
                   <Link href="/contact" className="text-sm sm:text-base hover:text-red-600 transition-colors">
                     Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/join-as-agent" className="text-sm sm:text-base hover:text-red-600 transition-colors">
+                    Join As B2B Agent
                   </Link>
                 </li>
                 <li>
@@ -163,8 +168,8 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="text-red-600 w-4 h-4 sm:w-5 sm:h-5" />
-                  <a href="mailto:info@r&bglobalconsultancy.com" className="text-sm sm:text-base hover:text-red-600 transition-colors">
-                    info@r&bglobalconsultancy.com
+                  <a href="mailto:info@rnbgc.com" className="text-sm sm:text-base hover:text-red-600 transition-colors">
+                    info@rnbgc.com
                   </a>
                 </div>
               </div>

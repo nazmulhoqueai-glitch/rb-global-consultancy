@@ -280,7 +280,7 @@ const TermsConditionsPage = () => {
                 <div>
                   <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">9.3 Complaints Procedure</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    If you have a complaint about our services:\n1. Submit your complaint in writing to info@r&bglobalconsultancy.com\n2. Include your name, contact details, and a detailed description of the issue\n3. We will acknowledge receipt within 2 business days\n4. We will investigate and respond within 10 business days\n5. If you are not satisfied with our response, you may escalate to management
+                    If you have a complaint about our services:\n1. Submit your complaint in writing to info@rnbgc.com\n2. Include your name, contact details, and a detailed description of the issue\n3. We will acknowledge receipt within 2 business days\n4. We will investigate and respond within 10 business days\n5. If you are not satisfied with our response, you may escalate to management
                   </p>
                 </div>
               </div>
@@ -337,8 +337,8 @@ const TermsConditionsPage = () => {
                     <Mail className="w-5 h-5 text-red-600 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-gray-900">Email:</p>
-                      <a href="mailto:info@r&bglobalconsultancy.com" className="text-red-600 hover:text-red-700">
-                        info@r&bglobalconsultancy.com
+                      <a href="mailto:info@rnbgc.com" className="text-red-600 hover:text-red-700">
+                        info@rnbgc.com
                       </a>
                     </div>
                   </div>

@@ -12,7 +12,7 @@ const TopNav = () => {
           <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
             <div className="flex items-center space-x-2">
               <Mail size={14} className="sm:w-4 sm:h-4" />
-              <span className="text-xs sm:text-sm">info@r&bglobalconsultancy.com</span>
+              <span className="text-xs sm:text-sm">info@rnbgc.com</span>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin size={14} className="sm:w-4 sm:h-4" />

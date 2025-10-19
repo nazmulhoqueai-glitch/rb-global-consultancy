@@ -6,7 +6,7 @@ import MainNav from '@/components/navigation/MainNav'
 import Footer from '@/components/navigation/Footer'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Globe, Clock, DollarSign, CheckCircle, Search, MapPin, Users, TrendingUp, ArrowRight, X, FileText, GraduationCap, Briefcase, Camera, Home, Phone, Mail, Calendar } from 'lucide-react'
+import { Globe, Clock, DollarSign, CheckCircle, MapPin, Users, TrendingUp, ArrowRight, X, FileText, GraduationCap, Briefcase, Camera, Home, Phone, Mail, Calendar } from 'lucide-react'
 
 const countries = [
   {
@@ -321,16 +321,15 @@ const countryDetails = {
         phd: '25,000-50,000 MYR per year'
       },
       living: {
-        accommodation: '800-2,000 MYR per month',
-        food: '600-1,200 MYR per month',
+        accommodation: '300-1,000 MYR per month',
+        food: '200-800 MYR per month',
         transport: '200-400 MYR per month',
-        utilities: '150-300 MYR per month',
-        total: '1,750-3,900 MYR per month'
+        total: '1,000-2,000 MYR per month'
       }
     },
     workOpportunities: {
       duringStudy: 'Limited work rights during study',
-      afterGraduation: 'Work visa available after graduation',
+      afterGraduation: 'Work visa available after graduation(On Progress)',
       popularJobs: [
         'Software Developer',
         'Business Analyst',
@@ -339,7 +338,7 @@ const countryDetails = {
         'Teacher',
         'Healthcare Professional'
       ],
-      averageSalary: '3,000-8,000 MYR per month'
+      averageSalary: '4,000+ MYR per month'
     },
     process: {
       steps: [
@@ -1133,14 +1132,11 @@ const countryDetails = {
 
 const CountriesPage = () => {
   const [selectedContinent, setSelectedContinent] = useState('All')
-  const [searchQuery, setSearchQuery] = useState('')
   const [selectedCountry, setSelectedCountry] = useState<number | null>(null)
 
   const filteredCountries = countries.filter(country => {
     const matchesContinent = selectedContinent === 'All' || country.continent === selectedContinent
-    const matchesSearch = country.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         country.popularCities.some(city => city.toLowerCase().includes(searchQuery.toLowerCase()))
-    return matchesContinent && matchesSearch
+    return matchesContinent
   })
 
   return (
@@ -1210,30 +1206,16 @@ const CountriesPage = () => {
       </section>
 
       {/* Filter Section */}
-      <section className="py-8 sm:py-12 bg-white sticky top-20 z-40 shadow-md">
+      <section className="py-2 bg-white sticky top-20 z-40 shadow-md">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            {/* Search Bar */}
-            <div className="mb-6">
-              <div className="relative max-w-xl mx-auto">
-                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                <input
-                  type="text"
-                  placeholder="Search countries or cities..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-full focus:border-red-500 focus:outline-none text-gray-700 text-base"
-                />
-              </div>
-            </div>
-
             {/* Continent Filter */}
-            <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
+            <div className="flex overflow-x-auto gap-2 sm:gap-3 pb-2 sm:pb-0 sm:flex-wrap sm:justify-center">
               {continents.map((continent) => (
                 <button
                   key={continent}
                   onClick={() => setSelectedContinent(continent)}
-                  className={`px-4 sm:px-6 py-2 rounded-full font-medium transition-all text-sm sm:text-base ${
+                  className={`px-3 sm:px-6 py-2 rounded-full font-medium transition-all text-xs sm:text-base whitespace-nowrap flex-shrink-0 ${
                     selectedContinent === continent
                       ? 'bg-red-600 text-white shadow-lg scale-105'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -1242,11 +1224,6 @@ const CountriesPage = () => {
                   {continent}
                 </button>
               ))}
-            </div>
-
-            {/* Results Count */}
-            <div className="text-center mt-4 text-gray-600">
-              Showing <span className="font-semibold text-red-600">{filteredCountries.length}</span> countries
             </div>
           </div>
         </div>
@@ -1258,7 +1235,7 @@ const CountriesPage = () => {
           <div className="max-w-7xl mx-auto">
             <AnimatePresence mode="wait">
               <motion.div
-                key={selectedContinent + searchQuery}
+                key={selectedContinent}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
