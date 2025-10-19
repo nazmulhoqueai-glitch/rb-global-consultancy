@@ -10,7 +10,7 @@ const consultants = [
     id: 1,
     name: 'Abdul Momen Rafi',
     role: 'CEO & Founder',
-    image: '/images/team/ceo.jpg',
+    image: '/images/team/CEO.jpg',
     bgColor: 'bg-yellow-50',
     socials: {
       facebook: 'https://facebook.com',
@@ -49,7 +49,7 @@ const consultants = [
     id: 4,
     name: 'Mishkatur Rahman Sajid',
     role: 'Administration officer',
-    image: '/images/team/consultant1.JPEG',
+    image: '/images/team/consultant1.jpeg',
     bgColor: 'bg-green-50',
     socials: {
       facebook: 'https://facebook.com',
