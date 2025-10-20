@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
 
 const consultants = [
@@ -177,11 +176,10 @@ const ConsultantCard = ({
       
       {/* Image Container */}
       <div className="relative aspect-[3/4]">
-        <Image
+        <img
           src={consultant.image}
           alt={consultant.name}
-          fill
-          className="object-cover object-center clip-diagonal transition-transform duration-300 group-hover:scale-110"
+          className="w-full h-full object-cover object-center clip-diagonal transition-transform duration-300 group-hover:scale-110"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

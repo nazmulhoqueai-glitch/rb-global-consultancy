@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
 import { motion } from 'framer-motion'
@@ -33,17 +32,19 @@ const Footer = () => {
               className="space-y-4 sm:space-y-6"
             >
               <div className="flex items-center gap-4 mb-4 sm:mb-6">
-                <Image
+                <img
                   src="/logo.jpg"
                   alt="R&B Global Consultancy"
                   width={150}
                   height={60}
+                  className="h-auto"
                 />
-                <Image
-                  src="/logo-white2.JPEG"
+                <img
+                  src="/logo-white2.jpeg"
                   alt="R&B Global Consultancy Secondary Logo"
                   width={150}
                   height={60}
+                  className="h-auto"
                 />
               </div>
               <p className="text-gray-400 text-sm sm:text-base">
